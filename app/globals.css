@@ -1,26 +1,61 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-blue: #1e3a8a;
+  --color-brand-dark: #0f172a;
+  --color-brand-sidebar: #1e3a8a;
+  --color-sidebar-gradient-to: #172554;
+  --color-bg-main: #f8fafc;
+  --color-text-primary: #1e293b;
+  --color-text-secondary: #64748b;
+  --color-border-light: #e2e8f0;
+  
+  --shadow-premium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-sidebar: 4px 0 24px 0 rgba(0, 0, 0, 0.05);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fafc;
+  --foreground: #1e293b;
+  --sidebar-bg: #1e3a8a;
+  --sidebar-text: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-bg-main text-text-primary antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.premium-card {
+  @apply bg-white rounded-2xl border border-border-light shadow-premium p-6;
+}
+
+.sidebar-link {
+  @apply flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 text-white/60 hover:bg-white/5 hover:text-white font-medium border border-transparent;
+}
+
+.sidebar-link.active {
+  @apply bg-white/15 text-white font-bold shadow-lg border-white/20 backdrop-blur-md;
+}
+
+.table-header {
+  @apply text-text-secondary text-xs font-semibold uppercase tracking-wider px-6 py-3 border-b border-border-light bg-slate-50/50;
+}
+
+.table-row {
+  @apply border-b border-border-light hover:bg-slate-50 transition-colors;
+}
+
+.badge-expense {
+  @apply px-3 py-1 rounded-full text-xs font-medium bg-red-50 text-red-600 border border-red-100;
+}
+
+.badge-income {
+  @apply px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-600 border border-emerald-100;
+}
+
+.action-btn {
+  @apply p-2 rounded-lg hover:bg-slate-100 text-text-secondary transition-colors;
 }

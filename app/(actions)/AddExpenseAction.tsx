@@ -1,0 +1,67 @@
+"use server";
+
+import { prisma } from "@/lib/prisma";
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
+import { z } from "zod";
+import { getSession } from "@/lib/auth";
+
+const expenseSchema = z.object({
+  amount: z.number().min(0.01, "Amount must be at least 0.01"),
+  date: z.string().refine((val) => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const inputDate = new Date(val);
+    inputDate.setHours(0, 0, 0, 0);
+    return inputDate >= today;
+  }, "Date cannot be in the past"),
+  projectId: z.number().positive("Project is required"),
+  peopleId: z.number().positive("Person is required"),
+});
+
+export async function AddExpenseAction(formData: FormData) {
+  const expenseDate = formData.get("expenseDate") as string;
+  const categoryId = formData.get("categoryId");
+  const subCategoryId = formData.get("subCategoryId");
+  const peopleId = Number(formData.get("peopleId"));
+  const projectId = formData.get("projectId");
+  const amount = Number(formData.get("amount"));
+  const expenseDetail = formData.get("expenseDetail") as string;
+  const attachmentPath = formData.get("attachmentPath") as string;
+  const description = formData.get("description") as string;
+  const parsedProjectId = Number(projectId);
+
+  const parsed = expenseSchema.safeParse({ amount, date: expenseDate, projectId: parsedProjectId, peopleId });
+  if (!parsed.success) {
+    throw new Error(parsed.error.message);
+  }
+
+  // Get session user
+  const session = await getSession();
+  const creatorId = session?.user?.id || 1;
+  const isUser = session?.user?.role === "USER";
+
+  // If user is adding, they are the peopleId
+  const finalPeopleId = isUser ? creatorId : peopleId;
+
+  await prisma.expenses.create({
+    data: {
+      ExpenseDate: new Date(expenseDate),
+      CategoryID: categoryId ? Number(categoryId) : null,
+      SubCategoryID: subCategoryId ? Number(subCategoryId) : null,
+      PeopleID: finalPeopleId,
+      ProjectID: projectId ? Number(projectId) : null,
+      Amount: amount,
+      ExpenseDetail: expenseDetail,
+      AttachmentPath: attachmentPath,
+      Description: description,
+      UserID: session?.user?.adminId || 1, // Store Admin ID for isolation
+      Created: new Date(),
+      Modified: new Date(),
+    },
+  });
+
+  // Refresh the transactions page
+  revalidatePath("/transactions");
+  redirect("/transactions");
+}
