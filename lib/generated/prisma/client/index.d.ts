@@ -755,6 +755,10 @@ export namespace Prisma {
             args: Prisma.categoriesCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
+          createManyAndReturn: {
+            args: Prisma.categoriesCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$categoriesPayload>[]
+          }
           delete: {
             args: Prisma.categoriesDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$categoriesPayload>
@@ -770,6 +774,10 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.categoriesUpdateManyArgs<ExtArgs>
             result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.categoriesUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$categoriesPayload>[]
           }
           upsert: {
             args: Prisma.categoriesUpsertArgs<ExtArgs>
@@ -821,6 +829,10 @@ export namespace Prisma {
             args: Prisma.expensesCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
+          createManyAndReturn: {
+            args: Prisma.expensesCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$expensesPayload>[]
+          }
           delete: {
             args: Prisma.expensesDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$expensesPayload>
@@ -836,6 +848,10 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.expensesUpdateManyArgs<ExtArgs>
             result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.expensesUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$expensesPayload>[]
           }
           upsert: {
             args: Prisma.expensesUpsertArgs<ExtArgs>
@@ -887,6 +903,10 @@ export namespace Prisma {
             args: Prisma.incomesCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
+          createManyAndReturn: {
+            args: Prisma.incomesCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$incomesPayload>[]
+          }
           delete: {
             args: Prisma.incomesDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$incomesPayload>
@@ -902,6 +922,10 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.incomesUpdateManyArgs<ExtArgs>
             result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.incomesUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$incomesPayload>[]
           }
           upsert: {
             args: Prisma.incomesUpsertArgs<ExtArgs>
@@ -953,6 +977,10 @@ export namespace Prisma {
             args: Prisma.peoplesCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
+          createManyAndReturn: {
+            args: Prisma.peoplesCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$peoplesPayload>[]
+          }
           delete: {
             args: Prisma.peoplesDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$peoplesPayload>
@@ -968,6 +996,10 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.peoplesUpdateManyArgs<ExtArgs>
             result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.peoplesUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$peoplesPayload>[]
           }
           upsert: {
             args: Prisma.peoplesUpsertArgs<ExtArgs>
@@ -1019,6 +1051,10 @@ export namespace Prisma {
             args: Prisma.projectsCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
+          createManyAndReturn: {
+            args: Prisma.projectsCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$projectsPayload>[]
+          }
           delete: {
             args: Prisma.projectsDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$projectsPayload>
@@ -1034,6 +1070,10 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.projectsUpdateManyArgs<ExtArgs>
             result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.projectsUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$projectsPayload>[]
           }
           upsert: {
             args: Prisma.projectsUpsertArgs<ExtArgs>
@@ -1085,6 +1125,10 @@ export namespace Prisma {
             args: Prisma.sub_categoriesCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
+          createManyAndReturn: {
+            args: Prisma.sub_categoriesCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$sub_categoriesPayload>[]
+          }
           delete: {
             args: Prisma.sub_categoriesDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$sub_categoriesPayload>
@@ -1100,6 +1144,10 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.sub_categoriesUpdateManyArgs<ExtArgs>
             result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.sub_categoriesUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$sub_categoriesPayload>[]
           }
           upsert: {
             args: Prisma.sub_categoriesUpsertArgs<ExtArgs>
@@ -1151,6 +1199,10 @@ export namespace Prisma {
             args: Prisma.usersCreateManyArgs<ExtArgs>
             result: BatchPayload
           }
+          createManyAndReturn: {
+            args: Prisma.usersCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$usersPayload>[]
+          }
           delete: {
             args: Prisma.usersDeleteArgs<ExtArgs>
             result: $Utils.PayloadToResult<Prisma.$usersPayload>
@@ -1166,6 +1218,10 @@ export namespace Prisma {
           updateMany: {
             args: Prisma.usersUpdateManyArgs<ExtArgs>
             result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.usersUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$usersPayload>[]
           }
           upsert: {
             args: Prisma.usersUpsertArgs<ExtArgs>
@@ -1362,67 +1418,6 @@ export namespace Prisma {
    * Count Types
    */
 
-
-  /**
-   * Count Type PeoplesCountOutputType
-   */
-
-  export type PeoplesCountOutputType = {
-    projects: number
-  }
-
-  export type PeoplesCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    projects?: boolean | PeoplesCountOutputTypeCountProjectsArgs
-  }
-
-  // Custom InputTypes
-  /**
-   * PeoplesCountOutputType without action
-   */
-  export type PeoplesCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the PeoplesCountOutputType
-     */
-    select?: PeoplesCountOutputTypeSelect<ExtArgs> | null
-  }
-
-  /**
-   * PeoplesCountOutputType without action
-   */
-  export type PeoplesCountOutputTypeCountProjectsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: projectsWhereInput
-  }
-
-
-  /**
-   * Count Type ProjectsCountOutputType
-   */
-
-  export type ProjectsCountOutputType = {
-    assignedPeoples: number
-  }
-
-  export type ProjectsCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    assignedPeoples?: boolean | ProjectsCountOutputTypeCountAssignedPeoplesArgs
-  }
-
-  // Custom InputTypes
-  /**
-   * ProjectsCountOutputType without action
-   */
-  export type ProjectsCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the ProjectsCountOutputType
-     */
-    select?: ProjectsCountOutputTypeSelect<ExtArgs> | null
-  }
-
-  /**
-   * ProjectsCountOutputType without action
-   */
-  export type ProjectsCountOutputTypeCountAssignedPeoplesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    where?: peoplesWhereInput
-  }
 
 
   /**
@@ -1685,7 +1680,33 @@ export namespace Prisma {
     Sequence?: boolean
   }, ExtArgs["result"]["categories"]>
 
+  export type categoriesSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    CategoryID?: boolean
+    CategoryName?: boolean
+    LogoPath?: boolean
+    IsExpense?: boolean
+    IsIncome?: boolean
+    IsActive?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+    Sequence?: boolean
+  }, ExtArgs["result"]["categories"]>
 
+  export type categoriesSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    CategoryID?: boolean
+    CategoryName?: boolean
+    LogoPath?: boolean
+    IsExpense?: boolean
+    IsIncome?: boolean
+    IsActive?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+    Sequence?: boolean
+  }, ExtArgs["result"]["categories"]>
 
   export type categoriesSelectScalar = {
     CategoryID?: boolean
@@ -1836,6 +1857,30 @@ export namespace Prisma {
     createMany<T extends categoriesCreateManyArgs>(args?: SelectSubset<T, categoriesCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
+     * Create many Categories and returns the data saved in the database.
+     * @param {categoriesCreateManyAndReturnArgs} args - Arguments to create many Categories.
+     * @example
+     * // Create many Categories
+     * const categories = await prisma.categories.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Categories and only return the `CategoryID`
+     * const categoriesWithCategoryIDOnly = await prisma.categories.createManyAndReturn({
+     *   select: { CategoryID: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends categoriesCreateManyAndReturnArgs>(args?: SelectSubset<T, categoriesCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$categoriesPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
      * Delete a Categories.
      * @param {categoriesDeleteArgs} args - Arguments to delete one Categories.
      * @example
@@ -1898,6 +1943,36 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends categoriesUpdateManyArgs>(args: SelectSubset<T, categoriesUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Categories and returns the data updated in the database.
+     * @param {categoriesUpdateManyAndReturnArgs} args - Arguments to update many Categories.
+     * @example
+     * // Update many Categories
+     * const categories = await prisma.categories.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Categories and only return the `CategoryID`
+     * const categoriesWithCategoryIDOnly = await prisma.categories.updateManyAndReturn({
+     *   select: { CategoryID: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends categoriesUpdateManyAndReturnArgs>(args: SelectSubset<T, categoriesUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$categoriesPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Categories.
@@ -2307,6 +2382,25 @@ export namespace Prisma {
   }
 
   /**
+   * categories createManyAndReturn
+   */
+  export type categoriesCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the categories
+     */
+    select?: categoriesSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the categories
+     */
+    omit?: categoriesOmit<ExtArgs> | null
+    /**
+     * The data used to create many categories.
+     */
+    data: categoriesCreateManyInput | categoriesCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
    * categories update
    */
   export type categoriesUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -2332,6 +2426,32 @@ export namespace Prisma {
    * categories updateMany
    */
   export type categoriesUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update categories.
+     */
+    data: XOR<categoriesUpdateManyMutationInput, categoriesUncheckedUpdateManyInput>
+    /**
+     * Filter which categories to update
+     */
+    where?: categoriesWhereInput
+    /**
+     * Limit how many categories to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * categories updateManyAndReturn
+   */
+  export type categoriesUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the categories
+     */
+    select?: categoriesSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the categories
+     */
+    omit?: categoriesOmit<ExtArgs> | null
     /**
      * The data used to update categories.
      */
@@ -2707,7 +2827,37 @@ export namespace Prisma {
     Modified?: boolean
   }, ExtArgs["result"]["expenses"]>
 
+  export type expensesSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    ExpenseID?: boolean
+    ExpenseDate?: boolean
+    CategoryID?: boolean
+    SubCategoryID?: boolean
+    PeopleID?: boolean
+    ProjectID?: boolean
+    Amount?: boolean
+    ExpenseDetail?: boolean
+    AttachmentPath?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+  }, ExtArgs["result"]["expenses"]>
 
+  export type expensesSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    ExpenseID?: boolean
+    ExpenseDate?: boolean
+    CategoryID?: boolean
+    SubCategoryID?: boolean
+    PeopleID?: boolean
+    ProjectID?: boolean
+    Amount?: boolean
+    ExpenseDetail?: boolean
+    AttachmentPath?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+  }, ExtArgs["result"]["expenses"]>
 
   export type expensesSelectScalar = {
     ExpenseID?: boolean
@@ -2862,6 +3012,30 @@ export namespace Prisma {
     createMany<T extends expensesCreateManyArgs>(args?: SelectSubset<T, expensesCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
+     * Create many Expenses and returns the data saved in the database.
+     * @param {expensesCreateManyAndReturnArgs} args - Arguments to create many Expenses.
+     * @example
+     * // Create many Expenses
+     * const expenses = await prisma.expenses.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Expenses and only return the `ExpenseID`
+     * const expensesWithExpenseIDOnly = await prisma.expenses.createManyAndReturn({
+     *   select: { ExpenseID: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends expensesCreateManyAndReturnArgs>(args?: SelectSubset<T, expensesCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$expensesPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
      * Delete a Expenses.
      * @param {expensesDeleteArgs} args - Arguments to delete one Expenses.
      * @example
@@ -2924,6 +3098,36 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends expensesUpdateManyArgs>(args: SelectSubset<T, expensesUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Expenses and returns the data updated in the database.
+     * @param {expensesUpdateManyAndReturnArgs} args - Arguments to update many Expenses.
+     * @example
+     * // Update many Expenses
+     * const expenses = await prisma.expenses.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Expenses and only return the `ExpenseID`
+     * const expensesWithExpenseIDOnly = await prisma.expenses.updateManyAndReturn({
+     *   select: { ExpenseID: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends expensesUpdateManyAndReturnArgs>(args: SelectSubset<T, expensesUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$expensesPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Expenses.
@@ -3335,6 +3539,25 @@ export namespace Prisma {
   }
 
   /**
+   * expenses createManyAndReturn
+   */
+  export type expensesCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the expenses
+     */
+    select?: expensesSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the expenses
+     */
+    omit?: expensesOmit<ExtArgs> | null
+    /**
+     * The data used to create many expenses.
+     */
+    data: expensesCreateManyInput | expensesCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
    * expenses update
    */
   export type expensesUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -3360,6 +3583,32 @@ export namespace Prisma {
    * expenses updateMany
    */
   export type expensesUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update expenses.
+     */
+    data: XOR<expensesUpdateManyMutationInput, expensesUncheckedUpdateManyInput>
+    /**
+     * Filter which expenses to update
+     */
+    where?: expensesWhereInput
+    /**
+     * Limit how many expenses to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * expenses updateManyAndReturn
+   */
+  export type expensesUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the expenses
+     */
+    select?: expensesSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the expenses
+     */
+    omit?: expensesOmit<ExtArgs> | null
     /**
      * The data used to update expenses.
      */
@@ -3735,7 +3984,37 @@ export namespace Prisma {
     Modified?: boolean
   }, ExtArgs["result"]["incomes"]>
 
+  export type incomesSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    IncomeID?: boolean
+    IncomeDate?: boolean
+    CategoryID?: boolean
+    SubCategoryID?: boolean
+    PeopleID?: boolean
+    ProjectID?: boolean
+    Amount?: boolean
+    IncomeDetail?: boolean
+    AttachmentPath?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+  }, ExtArgs["result"]["incomes"]>
 
+  export type incomesSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    IncomeID?: boolean
+    IncomeDate?: boolean
+    CategoryID?: boolean
+    SubCategoryID?: boolean
+    PeopleID?: boolean
+    ProjectID?: boolean
+    Amount?: boolean
+    IncomeDetail?: boolean
+    AttachmentPath?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+  }, ExtArgs["result"]["incomes"]>
 
   export type incomesSelectScalar = {
     IncomeID?: boolean
@@ -3890,6 +4169,30 @@ export namespace Prisma {
     createMany<T extends incomesCreateManyArgs>(args?: SelectSubset<T, incomesCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
+     * Create many Incomes and returns the data saved in the database.
+     * @param {incomesCreateManyAndReturnArgs} args - Arguments to create many Incomes.
+     * @example
+     * // Create many Incomes
+     * const incomes = await prisma.incomes.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Incomes and only return the `IncomeID`
+     * const incomesWithIncomeIDOnly = await prisma.incomes.createManyAndReturn({
+     *   select: { IncomeID: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends incomesCreateManyAndReturnArgs>(args?: SelectSubset<T, incomesCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$incomesPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
      * Delete a Incomes.
      * @param {incomesDeleteArgs} args - Arguments to delete one Incomes.
      * @example
@@ -3952,6 +4255,36 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends incomesUpdateManyArgs>(args: SelectSubset<T, incomesUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Incomes and returns the data updated in the database.
+     * @param {incomesUpdateManyAndReturnArgs} args - Arguments to update many Incomes.
+     * @example
+     * // Update many Incomes
+     * const incomes = await prisma.incomes.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Incomes and only return the `IncomeID`
+     * const incomesWithIncomeIDOnly = await prisma.incomes.updateManyAndReturn({
+     *   select: { IncomeID: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends incomesUpdateManyAndReturnArgs>(args: SelectSubset<T, incomesUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$incomesPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Incomes.
@@ -4363,6 +4696,25 @@ export namespace Prisma {
   }
 
   /**
+   * incomes createManyAndReturn
+   */
+  export type incomesCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the incomes
+     */
+    select?: incomesSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the incomes
+     */
+    omit?: incomesOmit<ExtArgs> | null
+    /**
+     * The data used to create many incomes.
+     */
+    data: incomesCreateManyInput | incomesCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
    * incomes update
    */
   export type incomesUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -4388,6 +4740,32 @@ export namespace Prisma {
    * incomes updateMany
    */
   export type incomesUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update incomes.
+     */
+    data: XOR<incomesUpdateManyMutationInput, incomesUncheckedUpdateManyInput>
+    /**
+     * Filter which incomes to update
+     */
+    where?: incomesWhereInput
+    /**
+     * Limit how many incomes to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * incomes updateManyAndReturn
+   */
+  export type incomesUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the incomes
+     */
+    select?: incomesSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the incomes
+     */
+    omit?: incomesOmit<ExtArgs> | null
     /**
      * The data used to update incomes.
      */
@@ -4725,11 +5103,35 @@ export namespace Prisma {
     Created?: boolean
     Modified?: boolean
     IsActive?: boolean
-    projects?: boolean | peoples$projectsArgs<ExtArgs>
-    _count?: boolean | PeoplesCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["peoples"]>
 
+  export type peoplesSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    PeopleID?: boolean
+    PeopleCode?: boolean
+    Password?: boolean
+    PeopleName?: boolean
+    Email?: boolean
+    MobileNo?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+    IsActive?: boolean
+  }, ExtArgs["result"]["peoples"]>
 
+  export type peoplesSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    PeopleID?: boolean
+    PeopleCode?: boolean
+    Password?: boolean
+    PeopleName?: boolean
+    Email?: boolean
+    MobileNo?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+    IsActive?: boolean
+  }, ExtArgs["result"]["peoples"]>
 
   export type peoplesSelectScalar = {
     PeopleID?: boolean
@@ -4746,16 +5148,10 @@ export namespace Prisma {
   }
 
   export type peoplesOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"PeopleID" | "PeopleCode" | "Password" | "PeopleName" | "Email" | "MobileNo" | "Description" | "UserID" | "Created" | "Modified" | "IsActive", ExtArgs["result"]["peoples"]>
-  export type peoplesInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    projects?: boolean | peoples$projectsArgs<ExtArgs>
-    _count?: boolean | PeoplesCountOutputTypeDefaultArgs<ExtArgs>
-  }
 
   export type $peoplesPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "peoples"
-    objects: {
-      projects: Prisma.$projectsPayload<ExtArgs>[]
-    }
+    objects: {}
     scalars: $Extensions.GetPayloadResult<{
       PeopleID: number
       PeopleCode: string | null
@@ -4886,6 +5282,30 @@ export namespace Prisma {
     createMany<T extends peoplesCreateManyArgs>(args?: SelectSubset<T, peoplesCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
+     * Create many Peoples and returns the data saved in the database.
+     * @param {peoplesCreateManyAndReturnArgs} args - Arguments to create many Peoples.
+     * @example
+     * // Create many Peoples
+     * const peoples = await prisma.peoples.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Peoples and only return the `PeopleID`
+     * const peoplesWithPeopleIDOnly = await prisma.peoples.createManyAndReturn({
+     *   select: { PeopleID: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends peoplesCreateManyAndReturnArgs>(args?: SelectSubset<T, peoplesCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$peoplesPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
      * Delete a Peoples.
      * @param {peoplesDeleteArgs} args - Arguments to delete one Peoples.
      * @example
@@ -4948,6 +5368,36 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends peoplesUpdateManyArgs>(args: SelectSubset<T, peoplesUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Peoples and returns the data updated in the database.
+     * @param {peoplesUpdateManyAndReturnArgs} args - Arguments to update many Peoples.
+     * @example
+     * // Update many Peoples
+     * const peoples = await prisma.peoples.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Peoples and only return the `PeopleID`
+     * const peoplesWithPeopleIDOnly = await prisma.peoples.updateManyAndReturn({
+     *   select: { PeopleID: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends peoplesUpdateManyAndReturnArgs>(args: SelectSubset<T, peoplesUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$peoplesPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Peoples.
@@ -5108,7 +5558,6 @@ export namespace Prisma {
    */
   export interface Prisma__peoplesClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    projects<T extends peoples$projectsArgs<ExtArgs> = {}>(args?: Subset<T, peoples$projectsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$projectsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -5166,10 +5615,6 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
-    /**
      * Filter, which peoples to fetch.
      */
     where: peoplesWhereUniqueInput
@@ -5188,10 +5633,6 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
-    /**
      * Filter, which peoples to fetch.
      */
     where: peoplesWhereUniqueInput
@@ -5209,10 +5650,6 @@ export namespace Prisma {
      * Omit specific fields from the peoples
      */
     omit?: peoplesOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
     /**
      * Filter, which peoples to fetch.
      */
@@ -5262,10 +5699,6 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
-    /**
      * Filter, which peoples to fetch.
      */
     where?: peoplesWhereInput
@@ -5314,10 +5747,6 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
-    /**
      * Filter, which peoples to fetch.
      */
     where?: peoplesWhereInput
@@ -5361,10 +5790,6 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
-    /**
      * The data needed to create a peoples.
      */
     data: XOR<peoplesCreateInput, peoplesUncheckedCreateInput>
@@ -5374,6 +5799,25 @@ export namespace Prisma {
    * peoples createMany
    */
   export type peoplesCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many peoples.
+     */
+    data: peoplesCreateManyInput | peoplesCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * peoples createManyAndReturn
+   */
+  export type peoplesCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the peoples
+     */
+    select?: peoplesSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the peoples
+     */
+    omit?: peoplesOmit<ExtArgs> | null
     /**
      * The data used to create many peoples.
      */
@@ -5393,10 +5837,6 @@ export namespace Prisma {
      * Omit specific fields from the peoples
      */
     omit?: peoplesOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
     /**
      * The data needed to update a peoples.
      */
@@ -5426,6 +5866,32 @@ export namespace Prisma {
   }
 
   /**
+   * peoples updateManyAndReturn
+   */
+  export type peoplesUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the peoples
+     */
+    select?: peoplesSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the peoples
+     */
+    omit?: peoplesOmit<ExtArgs> | null
+    /**
+     * The data used to update peoples.
+     */
+    data: XOR<peoplesUpdateManyMutationInput, peoplesUncheckedUpdateManyInput>
+    /**
+     * Filter which peoples to update
+     */
+    where?: peoplesWhereInput
+    /**
+     * Limit how many peoples to update.
+     */
+    limit?: number
+  }
+
+  /**
    * peoples upsert
    */
   export type peoplesUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -5437,10 +5903,6 @@ export namespace Prisma {
      * Omit specific fields from the peoples
      */
     omit?: peoplesOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
     /**
      * The filter to search for the peoples to update in case it exists.
      */
@@ -5468,10 +5930,6 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
-    /**
      * Filter which peoples to delete.
      */
     where: peoplesWhereUniqueInput
@@ -5492,30 +5950,6 @@ export namespace Prisma {
   }
 
   /**
-   * peoples.projects
-   */
-  export type peoples$projectsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the projects
-     */
-    select?: projectsSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the projects
-     */
-    omit?: projectsOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
-    where?: projectsWhereInput
-    orderBy?: projectsOrderByWithRelationInput | projectsOrderByWithRelationInput[]
-    cursor?: projectsWhereUniqueInput
-    take?: number
-    skip?: number
-    distinct?: ProjectsScalarFieldEnum | ProjectsScalarFieldEnum[]
-  }
-
-  /**
    * peoples without action
    */
   export type peoplesDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -5527,10 +5961,6 @@ export namespace Prisma {
      * Omit specific fields from the peoples
      */
     omit?: peoplesOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
   }
 
 
@@ -5784,11 +6214,35 @@ export namespace Prisma {
     Created?: boolean
     Modified?: boolean
     IsActive?: boolean
-    assignedPeoples?: boolean | projects$assignedPeoplesArgs<ExtArgs>
-    _count?: boolean | ProjectsCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["projects"]>
 
+  export type projectsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    ProjectID?: boolean
+    ProjectName?: boolean
+    ProjectLogo?: boolean
+    ProjectStartDate?: boolean
+    ProjectEndDate?: boolean
+    ProjectDetail?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+    IsActive?: boolean
+  }, ExtArgs["result"]["projects"]>
 
+  export type projectsSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    ProjectID?: boolean
+    ProjectName?: boolean
+    ProjectLogo?: boolean
+    ProjectStartDate?: boolean
+    ProjectEndDate?: boolean
+    ProjectDetail?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+    IsActive?: boolean
+  }, ExtArgs["result"]["projects"]>
 
   export type projectsSelectScalar = {
     ProjectID?: boolean
@@ -5805,16 +6259,10 @@ export namespace Prisma {
   }
 
   export type projectsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"ProjectID" | "ProjectName" | "ProjectLogo" | "ProjectStartDate" | "ProjectEndDate" | "ProjectDetail" | "Description" | "UserID" | "Created" | "Modified" | "IsActive", ExtArgs["result"]["projects"]>
-  export type projectsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    assignedPeoples?: boolean | projects$assignedPeoplesArgs<ExtArgs>
-    _count?: boolean | ProjectsCountOutputTypeDefaultArgs<ExtArgs>
-  }
 
   export type $projectsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "projects"
-    objects: {
-      assignedPeoples: Prisma.$peoplesPayload<ExtArgs>[]
-    }
+    objects: {}
     scalars: $Extensions.GetPayloadResult<{
       ProjectID: number
       ProjectName: string
@@ -5945,6 +6393,30 @@ export namespace Prisma {
     createMany<T extends projectsCreateManyArgs>(args?: SelectSubset<T, projectsCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
+     * Create many Projects and returns the data saved in the database.
+     * @param {projectsCreateManyAndReturnArgs} args - Arguments to create many Projects.
+     * @example
+     * // Create many Projects
+     * const projects = await prisma.projects.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Projects and only return the `ProjectID`
+     * const projectsWithProjectIDOnly = await prisma.projects.createManyAndReturn({
+     *   select: { ProjectID: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends projectsCreateManyAndReturnArgs>(args?: SelectSubset<T, projectsCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$projectsPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
      * Delete a Projects.
      * @param {projectsDeleteArgs} args - Arguments to delete one Projects.
      * @example
@@ -6007,6 +6479,36 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends projectsUpdateManyArgs>(args: SelectSubset<T, projectsUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Projects and returns the data updated in the database.
+     * @param {projectsUpdateManyAndReturnArgs} args - Arguments to update many Projects.
+     * @example
+     * // Update many Projects
+     * const projects = await prisma.projects.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Projects and only return the `ProjectID`
+     * const projectsWithProjectIDOnly = await prisma.projects.updateManyAndReturn({
+     *   select: { ProjectID: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends projectsUpdateManyAndReturnArgs>(args: SelectSubset<T, projectsUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$projectsPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Projects.
@@ -6167,7 +6669,6 @@ export namespace Prisma {
    */
   export interface Prisma__projectsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
-    assignedPeoples<T extends projects$assignedPeoplesArgs<ExtArgs> = {}>(args?: Subset<T, projects$assignedPeoplesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$peoplesPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -6225,10 +6726,6 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
-    /**
      * Filter, which projects to fetch.
      */
     where: projectsWhereUniqueInput
@@ -6247,10 +6744,6 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
-    /**
      * Filter, which projects to fetch.
      */
     where: projectsWhereUniqueInput
@@ -6268,10 +6761,6 @@ export namespace Prisma {
      * Omit specific fields from the projects
      */
     omit?: projectsOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
     /**
      * Filter, which projects to fetch.
      */
@@ -6321,10 +6810,6 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
-    /**
      * Filter, which projects to fetch.
      */
     where?: projectsWhereInput
@@ -6373,10 +6858,6 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
-    /**
      * Filter, which projects to fetch.
      */
     where?: projectsWhereInput
@@ -6420,10 +6901,6 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
-    /**
      * The data needed to create a projects.
      */
     data: XOR<projectsCreateInput, projectsUncheckedCreateInput>
@@ -6433,6 +6910,25 @@ export namespace Prisma {
    * projects createMany
    */
   export type projectsCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many projects.
+     */
+    data: projectsCreateManyInput | projectsCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * projects createManyAndReturn
+   */
+  export type projectsCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the projects
+     */
+    select?: projectsSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the projects
+     */
+    omit?: projectsOmit<ExtArgs> | null
     /**
      * The data used to create many projects.
      */
@@ -6452,10 +6948,6 @@ export namespace Prisma {
      * Omit specific fields from the projects
      */
     omit?: projectsOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
     /**
      * The data needed to update a projects.
      */
@@ -6485,6 +6977,32 @@ export namespace Prisma {
   }
 
   /**
+   * projects updateManyAndReturn
+   */
+  export type projectsUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the projects
+     */
+    select?: projectsSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the projects
+     */
+    omit?: projectsOmit<ExtArgs> | null
+    /**
+     * The data used to update projects.
+     */
+    data: XOR<projectsUpdateManyMutationInput, projectsUncheckedUpdateManyInput>
+    /**
+     * Filter which projects to update
+     */
+    where?: projectsWhereInput
+    /**
+     * Limit how many projects to update.
+     */
+    limit?: number
+  }
+
+  /**
    * projects upsert
    */
   export type projectsUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -6496,10 +7014,6 @@ export namespace Prisma {
      * Omit specific fields from the projects
      */
     omit?: projectsOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
     /**
      * The filter to search for the projects to update in case it exists.
      */
@@ -6527,10 +7041,6 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
-    /**
      * Filter which projects to delete.
      */
     where: projectsWhereUniqueInput
@@ -6551,30 +7061,6 @@ export namespace Prisma {
   }
 
   /**
-   * projects.assignedPeoples
-   */
-  export type projects$assignedPeoplesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
-    /**
-     * Select specific fields to fetch from the peoples
-     */
-    select?: peoplesSelect<ExtArgs> | null
-    /**
-     * Omit specific fields from the peoples
-     */
-    omit?: peoplesOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: peoplesInclude<ExtArgs> | null
-    where?: peoplesWhereInput
-    orderBy?: peoplesOrderByWithRelationInput | peoplesOrderByWithRelationInput[]
-    cursor?: peoplesWhereUniqueInput
-    take?: number
-    skip?: number
-    distinct?: PeoplesScalarFieldEnum | PeoplesScalarFieldEnum[]
-  }
-
-  /**
    * projects without action
    */
   export type projectsDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -6586,10 +7072,6 @@ export namespace Prisma {
      * Omit specific fields from the projects
      */
     omit?: projectsOmit<ExtArgs> | null
-    /**
-     * Choose, which related nodes to fetch as well
-     */
-    include?: projectsInclude<ExtArgs> | null
   }
 
 
@@ -6861,7 +7343,35 @@ export namespace Prisma {
     Sequence?: boolean
   }, ExtArgs["result"]["sub_categories"]>
 
+  export type sub_categoriesSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    SubCategoryID?: boolean
+    CategoryID?: boolean
+    SubCategoryName?: boolean
+    LogoPath?: boolean
+    IsExpense?: boolean
+    IsIncome?: boolean
+    IsActive?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+    Sequence?: boolean
+  }, ExtArgs["result"]["sub_categories"]>
 
+  export type sub_categoriesSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    SubCategoryID?: boolean
+    CategoryID?: boolean
+    SubCategoryName?: boolean
+    LogoPath?: boolean
+    IsExpense?: boolean
+    IsIncome?: boolean
+    IsActive?: boolean
+    Description?: boolean
+    UserID?: boolean
+    Created?: boolean
+    Modified?: boolean
+    Sequence?: boolean
+  }, ExtArgs["result"]["sub_categories"]>
 
   export type sub_categoriesSelectScalar = {
     SubCategoryID?: boolean
@@ -7014,6 +7524,30 @@ export namespace Prisma {
     createMany<T extends sub_categoriesCreateManyArgs>(args?: SelectSubset<T, sub_categoriesCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
+     * Create many Sub_categories and returns the data saved in the database.
+     * @param {sub_categoriesCreateManyAndReturnArgs} args - Arguments to create many Sub_categories.
+     * @example
+     * // Create many Sub_categories
+     * const sub_categories = await prisma.sub_categories.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Sub_categories and only return the `SubCategoryID`
+     * const sub_categoriesWithSubCategoryIDOnly = await prisma.sub_categories.createManyAndReturn({
+     *   select: { SubCategoryID: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends sub_categoriesCreateManyAndReturnArgs>(args?: SelectSubset<T, sub_categoriesCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$sub_categoriesPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
      * Delete a Sub_categories.
      * @param {sub_categoriesDeleteArgs} args - Arguments to delete one Sub_categories.
      * @example
@@ -7076,6 +7610,36 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends sub_categoriesUpdateManyArgs>(args: SelectSubset<T, sub_categoriesUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Sub_categories and returns the data updated in the database.
+     * @param {sub_categoriesUpdateManyAndReturnArgs} args - Arguments to update many Sub_categories.
+     * @example
+     * // Update many Sub_categories
+     * const sub_categories = await prisma.sub_categories.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Sub_categories and only return the `SubCategoryID`
+     * const sub_categoriesWithSubCategoryIDOnly = await prisma.sub_categories.updateManyAndReturn({
+     *   select: { SubCategoryID: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends sub_categoriesUpdateManyAndReturnArgs>(args: SelectSubset<T, sub_categoriesUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$sub_categoriesPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Sub_categories.
@@ -7486,6 +8050,25 @@ export namespace Prisma {
   }
 
   /**
+   * sub_categories createManyAndReturn
+   */
+  export type sub_categoriesCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the sub_categories
+     */
+    select?: sub_categoriesSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the sub_categories
+     */
+    omit?: sub_categoriesOmit<ExtArgs> | null
+    /**
+     * The data used to create many sub_categories.
+     */
+    data: sub_categoriesCreateManyInput | sub_categoriesCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
    * sub_categories update
    */
   export type sub_categoriesUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -7511,6 +8094,32 @@ export namespace Prisma {
    * sub_categories updateMany
    */
   export type sub_categoriesUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update sub_categories.
+     */
+    data: XOR<sub_categoriesUpdateManyMutationInput, sub_categoriesUncheckedUpdateManyInput>
+    /**
+     * Filter which sub_categories to update
+     */
+    where?: sub_categoriesWhereInput
+    /**
+     * Limit how many sub_categories to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * sub_categories updateManyAndReturn
+   */
+  export type sub_categoriesUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the sub_categories
+     */
+    select?: sub_categoriesSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the sub_categories
+     */
+    omit?: sub_categoriesOmit<ExtArgs> | null
     /**
      * The data used to update sub_categories.
      */
@@ -7838,7 +8447,31 @@ export namespace Prisma {
     Modified?: boolean
   }, ExtArgs["result"]["users"]>
 
+  export type usersSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    UserID?: boolean
+    UserName?: boolean
+    EmailAddress?: boolean
+    Password?: boolean
+    MobileNo?: boolean
+    Role?: boolean
+    ProfileImage?: boolean
+    IsActive?: boolean
+    Created?: boolean
+    Modified?: boolean
+  }, ExtArgs["result"]["users"]>
 
+  export type usersSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    UserID?: boolean
+    UserName?: boolean
+    EmailAddress?: boolean
+    Password?: boolean
+    MobileNo?: boolean
+    Role?: boolean
+    ProfileImage?: boolean
+    IsActive?: boolean
+    Created?: boolean
+    Modified?: boolean
+  }, ExtArgs["result"]["users"]>
 
   export type usersSelectScalar = {
     UserID?: boolean
@@ -7987,6 +8620,30 @@ export namespace Prisma {
     createMany<T extends usersCreateManyArgs>(args?: SelectSubset<T, usersCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
 
     /**
+     * Create many Users and returns the data saved in the database.
+     * @param {usersCreateManyAndReturnArgs} args - Arguments to create many Users.
+     * @example
+     * // Create many Users
+     * const users = await prisma.users.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Users and only return the `UserID`
+     * const usersWithUserIDOnly = await prisma.users.createManyAndReturn({
+     *   select: { UserID: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends usersCreateManyAndReturnArgs>(args?: SelectSubset<T, usersCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$usersPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
      * Delete a Users.
      * @param {usersDeleteArgs} args - Arguments to delete one Users.
      * @example
@@ -8049,6 +8706,36 @@ export namespace Prisma {
      * 
      */
     updateMany<T extends usersUpdateManyArgs>(args: SelectSubset<T, usersUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Users and returns the data updated in the database.
+     * @param {usersUpdateManyAndReturnArgs} args - Arguments to update many Users.
+     * @example
+     * // Update many Users
+     * const users = await prisma.users.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Users and only return the `UserID`
+     * const usersWithUserIDOnly = await prisma.users.updateManyAndReturn({
+     *   select: { UserID: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends usersUpdateManyAndReturnArgs>(args: SelectSubset<T, usersUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$usersPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
 
     /**
      * Create or update one Users.
@@ -8457,6 +9144,25 @@ export namespace Prisma {
   }
 
   /**
+   * users createManyAndReturn
+   */
+  export type usersCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the users
+     */
+    select?: usersSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the users
+     */
+    omit?: usersOmit<ExtArgs> | null
+    /**
+     * The data used to create many users.
+     */
+    data: usersCreateManyInput | usersCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
    * users update
    */
   export type usersUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -8482,6 +9188,32 @@ export namespace Prisma {
    * users updateMany
    */
   export type usersUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update users.
+     */
+    data: XOR<usersUpdateManyMutationInput, usersUncheckedUpdateManyInput>
+    /**
+     * Filter which users to update
+     */
+    where?: usersWhereInput
+    /**
+     * Limit how many users to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * users updateManyAndReturn
+   */
+  export type usersUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the users
+     */
+    select?: usersSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the users
+     */
+    omit?: usersOmit<ExtArgs> | null
     /**
      * The data used to update users.
      */
@@ -8714,81 +9446,20 @@ export namespace Prisma {
   export type SortOrder = (typeof SortOrder)[keyof typeof SortOrder]
 
 
+  export const QueryMode: {
+    default: 'default',
+    insensitive: 'insensitive'
+  };
+
+  export type QueryMode = (typeof QueryMode)[keyof typeof QueryMode]
+
+
   export const NullsOrder: {
     first: 'first',
     last: 'last'
   };
 
   export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
-
-
-  export const categoriesOrderByRelevanceFieldEnum: {
-    CategoryName: 'CategoryName',
-    LogoPath: 'LogoPath',
-    Description: 'Description'
-  };
-
-  export type categoriesOrderByRelevanceFieldEnum = (typeof categoriesOrderByRelevanceFieldEnum)[keyof typeof categoriesOrderByRelevanceFieldEnum]
-
-
-  export const expensesOrderByRelevanceFieldEnum: {
-    ExpenseDetail: 'ExpenseDetail',
-    AttachmentPath: 'AttachmentPath',
-    Description: 'Description'
-  };
-
-  export type expensesOrderByRelevanceFieldEnum = (typeof expensesOrderByRelevanceFieldEnum)[keyof typeof expensesOrderByRelevanceFieldEnum]
-
-
-  export const incomesOrderByRelevanceFieldEnum: {
-    IncomeDetail: 'IncomeDetail',
-    AttachmentPath: 'AttachmentPath',
-    Description: 'Description'
-  };
-
-  export type incomesOrderByRelevanceFieldEnum = (typeof incomesOrderByRelevanceFieldEnum)[keyof typeof incomesOrderByRelevanceFieldEnum]
-
-
-  export const peoplesOrderByRelevanceFieldEnum: {
-    PeopleCode: 'PeopleCode',
-    Password: 'Password',
-    PeopleName: 'PeopleName',
-    Email: 'Email',
-    MobileNo: 'MobileNo',
-    Description: 'Description'
-  };
-
-  export type peoplesOrderByRelevanceFieldEnum = (typeof peoplesOrderByRelevanceFieldEnum)[keyof typeof peoplesOrderByRelevanceFieldEnum]
-
-
-  export const projectsOrderByRelevanceFieldEnum: {
-    ProjectName: 'ProjectName',
-    ProjectLogo: 'ProjectLogo',
-    ProjectDetail: 'ProjectDetail',
-    Description: 'Description'
-  };
-
-  export type projectsOrderByRelevanceFieldEnum = (typeof projectsOrderByRelevanceFieldEnum)[keyof typeof projectsOrderByRelevanceFieldEnum]
-
-
-  export const sub_categoriesOrderByRelevanceFieldEnum: {
-    SubCategoryName: 'SubCategoryName',
-    LogoPath: 'LogoPath',
-    Description: 'Description'
-  };
-
-  export type sub_categoriesOrderByRelevanceFieldEnum = (typeof sub_categoriesOrderByRelevanceFieldEnum)[keyof typeof sub_categoriesOrderByRelevanceFieldEnum]
-
-
-  export const usersOrderByRelevanceFieldEnum: {
-    UserName: 'UserName',
-    EmailAddress: 'EmailAddress',
-    Password: 'Password',
-    MobileNo: 'MobileNo',
-    ProfileImage: 'ProfileImage'
-  };
-
-  export type usersOrderByRelevanceFieldEnum = (typeof usersOrderByRelevanceFieldEnum)[keyof typeof usersOrderByRelevanceFieldEnum]
 
 
   /**
@@ -8804,9 +9475,23 @@ export namespace Prisma {
 
 
   /**
+   * Reference to a field of type 'Int[]'
+   */
+  export type ListIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int[]'>
+    
+
+
+  /**
    * Reference to a field of type 'String'
    */
   export type StringFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'String'>
+    
+
+
+  /**
+   * Reference to a field of type 'String[]'
+   */
+  export type ListStringFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'String[]'>
     
 
 
@@ -8825,9 +9510,23 @@ export namespace Prisma {
 
 
   /**
+   * Reference to a field of type 'DateTime[]'
+   */
+  export type ListDateTimeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'DateTime[]'>
+    
+
+
+  /**
    * Reference to a field of type 'Decimal'
    */
   export type DecimalFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Decimal'>
+    
+
+
+  /**
+   * Reference to a field of type 'Decimal[]'
+   */
+  export type ListDecimalFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Decimal[]'>
     
 
 
@@ -8839,9 +9538,23 @@ export namespace Prisma {
 
 
   /**
+   * Reference to a field of type 'Role[]'
+   */
+  export type ListEnumRoleFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Role[]'>
+    
+
+
+  /**
    * Reference to a field of type 'Float'
    */
   export type FloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float'>
+    
+
+
+  /**
+   * Reference to a field of type 'Float[]'
+   */
+  export type ListFloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float[]'>
     
   /**
    * Deep Input Types
@@ -8877,7 +9590,6 @@ export namespace Prisma {
     Created?: SortOrder
     Modified?: SortOrder
     Sequence?: SortOrderInput | SortOrder
-    _relevance?: categoriesOrderByRelevanceInput
   }
 
   export type categoriesWhereUniqueInput = Prisma.AtLeast<{
@@ -8966,7 +9678,6 @@ export namespace Prisma {
     UserID?: SortOrder
     Created?: SortOrder
     Modified?: SortOrder
-    _relevance?: expensesOrderByRelevanceInput
   }
 
   export type expensesWhereUniqueInput = Prisma.AtLeast<{
@@ -9061,7 +9772,6 @@ export namespace Prisma {
     UserID?: SortOrder
     Created?: SortOrder
     Modified?: SortOrder
-    _relevance?: incomesOrderByRelevanceInput
   }
 
   export type incomesWhereUniqueInput = Prisma.AtLeast<{
@@ -9138,7 +9848,6 @@ export namespace Prisma {
     Created?: DateTimeFilter<"peoples"> | Date | string
     Modified?: DateTimeFilter<"peoples"> | Date | string
     IsActive?: BoolNullableFilter<"peoples"> | boolean | null
-    projects?: ProjectsListRelationFilter
   }
 
   export type peoplesOrderByWithRelationInput = {
@@ -9153,8 +9862,6 @@ export namespace Prisma {
     Created?: SortOrder
     Modified?: SortOrder
     IsActive?: SortOrderInput | SortOrder
-    projects?: projectsOrderByRelationAggregateInput
-    _relevance?: peoplesOrderByRelevanceInput
   }
 
   export type peoplesWhereUniqueInput = Prisma.AtLeast<{
@@ -9172,7 +9879,6 @@ export namespace Prisma {
     Created?: DateTimeFilter<"peoples"> | Date | string
     Modified?: DateTimeFilter<"peoples"> | Date | string
     IsActive?: BoolNullableFilter<"peoples"> | boolean | null
-    projects?: ProjectsListRelationFilter
   }, "PeopleID">
 
   export type peoplesOrderByWithAggregationInput = {
@@ -9226,7 +9932,6 @@ export namespace Prisma {
     Created?: DateTimeFilter<"projects"> | Date | string
     Modified?: DateTimeFilter<"projects"> | Date | string
     IsActive?: BoolNullableFilter<"projects"> | boolean | null
-    assignedPeoples?: PeoplesListRelationFilter
   }
 
   export type projectsOrderByWithRelationInput = {
@@ -9241,8 +9946,6 @@ export namespace Prisma {
     Created?: SortOrder
     Modified?: SortOrder
     IsActive?: SortOrderInput | SortOrder
-    assignedPeoples?: peoplesOrderByRelationAggregateInput
-    _relevance?: projectsOrderByRelevanceInput
   }
 
   export type projectsWhereUniqueInput = Prisma.AtLeast<{
@@ -9260,7 +9963,6 @@ export namespace Prisma {
     Created?: DateTimeFilter<"projects"> | Date | string
     Modified?: DateTimeFilter<"projects"> | Date | string
     IsActive?: BoolNullableFilter<"projects"> | boolean | null
-    assignedPeoples?: PeoplesListRelationFilter
   }, "ProjectID">
 
   export type projectsOrderByWithAggregationInput = {
@@ -9330,7 +10032,6 @@ export namespace Prisma {
     Created?: SortOrder
     Modified?: SortOrder
     Sequence?: SortOrderInput | SortOrder
-    _relevance?: sub_categoriesOrderByRelevanceInput
   }
 
   export type sub_categoriesWhereUniqueInput = Prisma.AtLeast<{
@@ -9416,7 +10117,6 @@ export namespace Prisma {
     IsActive?: SortOrder
     Created?: SortOrder
     Modified?: SortOrder
-    _relevance?: usersOrderByRelevanceInput
   }
 
   export type usersWhereUniqueInput = Prisma.AtLeast<{
@@ -9793,7 +10493,6 @@ export namespace Prisma {
     Created: Date | string
     Modified: Date | string
     IsActive?: boolean | null
-    projects?: projectsCreateNestedManyWithoutAssignedPeoplesInput
   }
 
   export type peoplesUncheckedCreateInput = {
@@ -9808,7 +10507,6 @@ export namespace Prisma {
     Created: Date | string
     Modified: Date | string
     IsActive?: boolean | null
-    projects?: projectsUncheckedCreateNestedManyWithoutAssignedPeoplesInput
   }
 
   export type peoplesUpdateInput = {
@@ -9822,7 +10520,6 @@ export namespace Prisma {
     Created?: DateTimeFieldUpdateOperationsInput | Date | string
     Modified?: DateTimeFieldUpdateOperationsInput | Date | string
     IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    projects?: projectsUpdateManyWithoutAssignedPeoplesNestedInput
   }
 
   export type peoplesUncheckedUpdateInput = {
@@ -9837,7 +10534,6 @@ export namespace Prisma {
     Created?: DateTimeFieldUpdateOperationsInput | Date | string
     Modified?: DateTimeFieldUpdateOperationsInput | Date | string
     IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    projects?: projectsUncheckedUpdateManyWithoutAssignedPeoplesNestedInput
   }
 
   export type peoplesCreateManyInput = {
@@ -9892,7 +10588,6 @@ export namespace Prisma {
     Created: Date | string
     Modified: Date | string
     IsActive?: boolean | null
-    assignedPeoples?: peoplesCreateNestedManyWithoutProjectsInput
   }
 
   export type projectsUncheckedCreateInput = {
@@ -9907,7 +10602,6 @@ export namespace Prisma {
     Created: Date | string
     Modified: Date | string
     IsActive?: boolean | null
-    assignedPeoples?: peoplesUncheckedCreateNestedManyWithoutProjectsInput
   }
 
   export type projectsUpdateInput = {
@@ -9921,7 +10615,6 @@ export namespace Prisma {
     Created?: DateTimeFieldUpdateOperationsInput | Date | string
     Modified?: DateTimeFieldUpdateOperationsInput | Date | string
     IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    assignedPeoples?: peoplesUpdateManyWithoutProjectsNestedInput
   }
 
   export type projectsUncheckedUpdateInput = {
@@ -9936,7 +10629,6 @@ export namespace Prisma {
     Created?: DateTimeFieldUpdateOperationsInput | Date | string
     Modified?: DateTimeFieldUpdateOperationsInput | Date | string
     IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
-    assignedPeoples?: peoplesUncheckedUpdateManyWithoutProjectsNestedInput
   }
 
   export type projectsCreateManyInput = {
@@ -10089,9 +10781,9 @@ export namespace Prisma {
     MobileNo: string
     Role?: $Enums.Role
     ProfileImage?: string | null
-    IsActive?: boolean
-    Created?: Date | string
-    Modified?: Date | string
+    IsActive: boolean
+    Created: Date | string
+    Modified: Date | string
   }
 
   export type usersUncheckedCreateInput = {
@@ -10102,9 +10794,9 @@ export namespace Prisma {
     MobileNo: string
     Role?: $Enums.Role
     ProfileImage?: string | null
-    IsActive?: boolean
-    Created?: Date | string
-    Modified?: Date | string
+    IsActive: boolean
+    Created: Date | string
+    Modified: Date | string
   }
 
   export type usersUpdateInput = {
@@ -10140,9 +10832,9 @@ export namespace Prisma {
     MobileNo: string
     Role?: $Enums.Role
     ProfileImage?: string | null
-    IsActive?: boolean
-    Created?: Date | string
-    Modified?: Date | string
+    IsActive: boolean
+    Created: Date | string
+    Modified: Date | string
   }
 
   export type usersUpdateManyMutationInput = {
@@ -10172,8 +10864,8 @@ export namespace Prisma {
 
   export type IntFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[]
-    notIn?: number[]
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -10183,8 +10875,8 @@ export namespace Prisma {
 
   export type StringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[]
-    notIn?: string[]
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -10192,14 +10884,14 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    search?: string
+    mode?: QueryMode
     not?: NestedStringFilter<$PrismaModel> | string
   }
 
   export type StringNullableFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | null
-    notIn?: string[] | null
+    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -10207,7 +10899,7 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    search?: string
+    mode?: QueryMode
     not?: NestedStringNullableFilter<$PrismaModel> | string | null
   }
 
@@ -10218,8 +10910,8 @@ export namespace Prisma {
 
   export type DateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[]
-    notIn?: Date[] | string[]
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -10229,8 +10921,8 @@ export namespace Prisma {
 
   export type DecimalNullableFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -10241,12 +10933,6 @@ export namespace Prisma {
   export type SortOrderInput = {
     sort: SortOrder
     nulls?: NullsOrder
-  }
-
-  export type categoriesOrderByRelevanceInput = {
-    fields: categoriesOrderByRelevanceFieldEnum | categoriesOrderByRelevanceFieldEnum[]
-    sort: SortOrder
-    search: string
   }
 
   export type categoriesCountOrderByAggregateInput = {
@@ -10305,8 +10991,8 @@ export namespace Prisma {
 
   export type IntWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[]
-    notIn?: number[]
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -10321,8 +11007,8 @@ export namespace Prisma {
 
   export type StringWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[]
-    notIn?: string[]
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -10330,7 +11016,7 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    search?: string
+    mode?: QueryMode
     not?: NestedStringWithAggregatesFilter<$PrismaModel> | string
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedStringFilter<$PrismaModel>
@@ -10339,8 +11025,8 @@ export namespace Prisma {
 
   export type StringNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | null
-    notIn?: string[] | null
+    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -10348,7 +11034,7 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    search?: string
+    mode?: QueryMode
     not?: NestedStringNullableWithAggregatesFilter<$PrismaModel> | string | null
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedStringNullableFilter<$PrismaModel>
@@ -10365,8 +11051,8 @@ export namespace Prisma {
 
   export type DateTimeWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[]
-    notIn?: Date[] | string[]
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -10379,8 +11065,8 @@ export namespace Prisma {
 
   export type DecimalNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -10395,8 +11081,8 @@ export namespace Prisma {
 
   export type IntNullableFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | null
-    notIn?: number[] | null
+    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -10406,19 +11092,13 @@ export namespace Prisma {
 
   export type DecimalFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[]
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[]
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     not?: NestedDecimalFilter<$PrismaModel> | Decimal | DecimalJsLike | number | string
-  }
-
-  export type expensesOrderByRelevanceInput = {
-    fields: expensesOrderByRelevanceFieldEnum | expensesOrderByRelevanceFieldEnum[]
-    sort: SortOrder
-    search: string
   }
 
   export type expensesCountOrderByAggregateInput = {
@@ -10491,8 +11171,8 @@ export namespace Prisma {
 
   export type IntNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | null
-    notIn?: number[] | null
+    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -10507,8 +11187,8 @@ export namespace Prisma {
 
   export type DecimalWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[]
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[]
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -10519,12 +11199,6 @@ export namespace Prisma {
     _sum?: NestedDecimalFilter<$PrismaModel>
     _min?: NestedDecimalFilter<$PrismaModel>
     _max?: NestedDecimalFilter<$PrismaModel>
-  }
-
-  export type incomesOrderByRelevanceInput = {
-    fields: incomesOrderByRelevanceFieldEnum | incomesOrderByRelevanceFieldEnum[]
-    sort: SortOrder
-    search: string
   }
 
   export type incomesCountOrderByAggregateInput = {
@@ -10600,22 +11274,6 @@ export namespace Prisma {
     not?: NestedBoolNullableFilter<$PrismaModel> | boolean | null
   }
 
-  export type ProjectsListRelationFilter = {
-    every?: projectsWhereInput
-    some?: projectsWhereInput
-    none?: projectsWhereInput
-  }
-
-  export type projectsOrderByRelationAggregateInput = {
-    _count?: SortOrder
-  }
-
-  export type peoplesOrderByRelevanceInput = {
-    fields: peoplesOrderByRelevanceFieldEnum | peoplesOrderByRelevanceFieldEnum[]
-    sort: SortOrder
-    search: string
-  }
-
   export type peoplesCountOrderByAggregateInput = {
     PeopleID?: SortOrder
     PeopleCode?: SortOrder
@@ -10678,29 +11336,13 @@ export namespace Prisma {
 
   export type DateTimeNullableFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | null
-    notIn?: Date[] | string[] | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     not?: NestedDateTimeNullableFilter<$PrismaModel> | Date | string | null
-  }
-
-  export type PeoplesListRelationFilter = {
-    every?: peoplesWhereInput
-    some?: peoplesWhereInput
-    none?: peoplesWhereInput
-  }
-
-  export type peoplesOrderByRelationAggregateInput = {
-    _count?: SortOrder
-  }
-
-  export type projectsOrderByRelevanceInput = {
-    fields: projectsOrderByRelevanceFieldEnum | projectsOrderByRelevanceFieldEnum[]
-    sort: SortOrder
-    search: string
   }
 
   export type projectsCountOrderByAggregateInput = {
@@ -10757,8 +11399,8 @@ export namespace Prisma {
 
   export type DateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | null
-    notIn?: Date[] | string[] | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -10767,12 +11409,6 @@ export namespace Prisma {
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedDateTimeNullableFilter<$PrismaModel>
     _max?: NestedDateTimeNullableFilter<$PrismaModel>
-  }
-
-  export type sub_categoriesOrderByRelevanceInput = {
-    fields: sub_categoriesOrderByRelevanceFieldEnum | sub_categoriesOrderByRelevanceFieldEnum[]
-    sort: SortOrder
-    search: string
   }
 
   export type sub_categoriesCountOrderByAggregateInput = {
@@ -10836,15 +11472,9 @@ export namespace Prisma {
 
   export type EnumRoleFilter<$PrismaModel = never> = {
     equals?: $Enums.Role | EnumRoleFieldRefInput<$PrismaModel>
-    in?: $Enums.Role[]
-    notIn?: $Enums.Role[]
+    in?: $Enums.Role[] | ListEnumRoleFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Role[] | ListEnumRoleFieldRefInput<$PrismaModel>
     not?: NestedEnumRoleFilter<$PrismaModel> | $Enums.Role
-  }
-
-  export type usersOrderByRelevanceInput = {
-    fields: usersOrderByRelevanceFieldEnum | usersOrderByRelevanceFieldEnum[]
-    sort: SortOrder
-    search: string
   }
 
   export type usersCountOrderByAggregateInput = {
@@ -10896,8 +11526,8 @@ export namespace Prisma {
 
   export type EnumRoleWithAggregatesFilter<$PrismaModel = never> = {
     equals?: $Enums.Role | EnumRoleFieldRefInput<$PrismaModel>
-    in?: $Enums.Role[]
-    notIn?: $Enums.Role[]
+    in?: $Enums.Role[] | ListEnumRoleFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Role[] | ListEnumRoleFieldRefInput<$PrismaModel>
     not?: NestedEnumRoleWithAggregatesFilter<$PrismaModel> | $Enums.Role
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedEnumRoleFilter<$PrismaModel>
@@ -10952,88 +11582,12 @@ export namespace Prisma {
     divide?: Decimal | DecimalJsLike | number | string
   }
 
-  export type projectsCreateNestedManyWithoutAssignedPeoplesInput = {
-    create?: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput> | projectsCreateWithoutAssignedPeoplesInput[] | projectsUncheckedCreateWithoutAssignedPeoplesInput[]
-    connectOrCreate?: projectsCreateOrConnectWithoutAssignedPeoplesInput | projectsCreateOrConnectWithoutAssignedPeoplesInput[]
-    connect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
-  }
-
-  export type projectsUncheckedCreateNestedManyWithoutAssignedPeoplesInput = {
-    create?: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput> | projectsCreateWithoutAssignedPeoplesInput[] | projectsUncheckedCreateWithoutAssignedPeoplesInput[]
-    connectOrCreate?: projectsCreateOrConnectWithoutAssignedPeoplesInput | projectsCreateOrConnectWithoutAssignedPeoplesInput[]
-    connect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
-  }
-
   export type NullableBoolFieldUpdateOperationsInput = {
     set?: boolean | null
   }
 
-  export type projectsUpdateManyWithoutAssignedPeoplesNestedInput = {
-    create?: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput> | projectsCreateWithoutAssignedPeoplesInput[] | projectsUncheckedCreateWithoutAssignedPeoplesInput[]
-    connectOrCreate?: projectsCreateOrConnectWithoutAssignedPeoplesInput | projectsCreateOrConnectWithoutAssignedPeoplesInput[]
-    upsert?: projectsUpsertWithWhereUniqueWithoutAssignedPeoplesInput | projectsUpsertWithWhereUniqueWithoutAssignedPeoplesInput[]
-    set?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
-    disconnect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
-    delete?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
-    connect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
-    update?: projectsUpdateWithWhereUniqueWithoutAssignedPeoplesInput | projectsUpdateWithWhereUniqueWithoutAssignedPeoplesInput[]
-    updateMany?: projectsUpdateManyWithWhereWithoutAssignedPeoplesInput | projectsUpdateManyWithWhereWithoutAssignedPeoplesInput[]
-    deleteMany?: projectsScalarWhereInput | projectsScalarWhereInput[]
-  }
-
-  export type projectsUncheckedUpdateManyWithoutAssignedPeoplesNestedInput = {
-    create?: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput> | projectsCreateWithoutAssignedPeoplesInput[] | projectsUncheckedCreateWithoutAssignedPeoplesInput[]
-    connectOrCreate?: projectsCreateOrConnectWithoutAssignedPeoplesInput | projectsCreateOrConnectWithoutAssignedPeoplesInput[]
-    upsert?: projectsUpsertWithWhereUniqueWithoutAssignedPeoplesInput | projectsUpsertWithWhereUniqueWithoutAssignedPeoplesInput[]
-    set?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
-    disconnect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
-    delete?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
-    connect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
-    update?: projectsUpdateWithWhereUniqueWithoutAssignedPeoplesInput | projectsUpdateWithWhereUniqueWithoutAssignedPeoplesInput[]
-    updateMany?: projectsUpdateManyWithWhereWithoutAssignedPeoplesInput | projectsUpdateManyWithWhereWithoutAssignedPeoplesInput[]
-    deleteMany?: projectsScalarWhereInput | projectsScalarWhereInput[]
-  }
-
-  export type peoplesCreateNestedManyWithoutProjectsInput = {
-    create?: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput> | peoplesCreateWithoutProjectsInput[] | peoplesUncheckedCreateWithoutProjectsInput[]
-    connectOrCreate?: peoplesCreateOrConnectWithoutProjectsInput | peoplesCreateOrConnectWithoutProjectsInput[]
-    connect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
-  }
-
-  export type peoplesUncheckedCreateNestedManyWithoutProjectsInput = {
-    create?: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput> | peoplesCreateWithoutProjectsInput[] | peoplesUncheckedCreateWithoutProjectsInput[]
-    connectOrCreate?: peoplesCreateOrConnectWithoutProjectsInput | peoplesCreateOrConnectWithoutProjectsInput[]
-    connect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
-  }
-
   export type NullableDateTimeFieldUpdateOperationsInput = {
     set?: Date | string | null
-  }
-
-  export type peoplesUpdateManyWithoutProjectsNestedInput = {
-    create?: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput> | peoplesCreateWithoutProjectsInput[] | peoplesUncheckedCreateWithoutProjectsInput[]
-    connectOrCreate?: peoplesCreateOrConnectWithoutProjectsInput | peoplesCreateOrConnectWithoutProjectsInput[]
-    upsert?: peoplesUpsertWithWhereUniqueWithoutProjectsInput | peoplesUpsertWithWhereUniqueWithoutProjectsInput[]
-    set?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
-    disconnect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
-    delete?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
-    connect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
-    update?: peoplesUpdateWithWhereUniqueWithoutProjectsInput | peoplesUpdateWithWhereUniqueWithoutProjectsInput[]
-    updateMany?: peoplesUpdateManyWithWhereWithoutProjectsInput | peoplesUpdateManyWithWhereWithoutProjectsInput[]
-    deleteMany?: peoplesScalarWhereInput | peoplesScalarWhereInput[]
-  }
-
-  export type peoplesUncheckedUpdateManyWithoutProjectsNestedInput = {
-    create?: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput> | peoplesCreateWithoutProjectsInput[] | peoplesUncheckedCreateWithoutProjectsInput[]
-    connectOrCreate?: peoplesCreateOrConnectWithoutProjectsInput | peoplesCreateOrConnectWithoutProjectsInput[]
-    upsert?: peoplesUpsertWithWhereUniqueWithoutProjectsInput | peoplesUpsertWithWhereUniqueWithoutProjectsInput[]
-    set?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
-    disconnect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
-    delete?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
-    connect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
-    update?: peoplesUpdateWithWhereUniqueWithoutProjectsInput | peoplesUpdateWithWhereUniqueWithoutProjectsInput[]
-    updateMany?: peoplesUpdateManyWithWhereWithoutProjectsInput | peoplesUpdateManyWithWhereWithoutProjectsInput[]
-    deleteMany?: peoplesScalarWhereInput | peoplesScalarWhereInput[]
   }
 
   export type EnumRoleFieldUpdateOperationsInput = {
@@ -11042,8 +11596,8 @@ export namespace Prisma {
 
   export type NestedIntFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[]
-    notIn?: number[]
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -11053,8 +11607,8 @@ export namespace Prisma {
 
   export type NestedStringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[]
-    notIn?: string[]
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -11062,14 +11616,13 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    search?: string
     not?: NestedStringFilter<$PrismaModel> | string
   }
 
   export type NestedStringNullableFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | null
-    notIn?: string[] | null
+    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -11077,7 +11630,6 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    search?: string
     not?: NestedStringNullableFilter<$PrismaModel> | string | null
   }
 
@@ -11088,8 +11640,8 @@ export namespace Prisma {
 
   export type NestedDateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[]
-    notIn?: Date[] | string[]
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -11099,8 +11651,8 @@ export namespace Prisma {
 
   export type NestedDecimalNullableFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -11110,8 +11662,8 @@ export namespace Prisma {
 
   export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel>
-    in?: number[]
-    notIn?: number[]
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -11126,8 +11678,8 @@ export namespace Prisma {
 
   export type NestedFloatFilter<$PrismaModel = never> = {
     equals?: number | FloatFieldRefInput<$PrismaModel>
-    in?: number[]
-    notIn?: number[]
+    in?: number[] | ListFloatFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel>
     lt?: number | FloatFieldRefInput<$PrismaModel>
     lte?: number | FloatFieldRefInput<$PrismaModel>
     gt?: number | FloatFieldRefInput<$PrismaModel>
@@ -11137,8 +11689,8 @@ export namespace Prisma {
 
   export type NestedStringWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
-    in?: string[]
-    notIn?: string[]
+    in?: string[] | ListStringFieldRefInput<$PrismaModel>
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel>
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -11146,7 +11698,6 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    search?: string
     not?: NestedStringWithAggregatesFilter<$PrismaModel> | string
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedStringFilter<$PrismaModel>
@@ -11155,8 +11706,8 @@ export namespace Prisma {
 
   export type NestedStringNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel> | null
-    in?: string[] | null
-    notIn?: string[] | null
+    in?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    notIn?: string[] | ListStringFieldRefInput<$PrismaModel> | null
     lt?: string | StringFieldRefInput<$PrismaModel>
     lte?: string | StringFieldRefInput<$PrismaModel>
     gt?: string | StringFieldRefInput<$PrismaModel>
@@ -11164,7 +11715,6 @@ export namespace Prisma {
     contains?: string | StringFieldRefInput<$PrismaModel>
     startsWith?: string | StringFieldRefInput<$PrismaModel>
     endsWith?: string | StringFieldRefInput<$PrismaModel>
-    search?: string
     not?: NestedStringNullableWithAggregatesFilter<$PrismaModel> | string | null
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedStringNullableFilter<$PrismaModel>
@@ -11173,8 +11723,8 @@ export namespace Prisma {
 
   export type NestedIntNullableFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | null
-    notIn?: number[] | null
+    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -11192,8 +11742,8 @@ export namespace Prisma {
 
   export type NestedDateTimeWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    in?: Date[] | string[]
-    notIn?: Date[] | string[]
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -11206,8 +11756,8 @@ export namespace Prisma {
 
   export type NestedDecimalNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel> | null
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | null
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel> | null
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -11222,8 +11772,8 @@ export namespace Prisma {
 
   export type NestedDecimalFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[]
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[]
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -11233,8 +11783,8 @@ export namespace Prisma {
 
   export type NestedIntNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | null
-    notIn?: number[] | null
+    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
     lt?: number | IntFieldRefInput<$PrismaModel>
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
@@ -11249,8 +11799,8 @@ export namespace Prisma {
 
   export type NestedFloatNullableFilter<$PrismaModel = never> = {
     equals?: number | FloatFieldRefInput<$PrismaModel> | null
-    in?: number[] | null
-    notIn?: number[] | null
+    in?: number[] | ListFloatFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel> | null
     lt?: number | FloatFieldRefInput<$PrismaModel>
     lte?: number | FloatFieldRefInput<$PrismaModel>
     gt?: number | FloatFieldRefInput<$PrismaModel>
@@ -11260,8 +11810,8 @@ export namespace Prisma {
 
   export type NestedDecimalWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
-    in?: Decimal[] | DecimalJsLike[] | number[] | string[]
-    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[]
+    in?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
+    notIn?: Decimal[] | DecimalJsLike[] | number[] | string[] | ListDecimalFieldRefInput<$PrismaModel>
     lt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     lte?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
     gt?: Decimal | DecimalJsLike | number | string | DecimalFieldRefInput<$PrismaModel>
@@ -11289,8 +11839,8 @@ export namespace Prisma {
 
   export type NestedDateTimeNullableFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | null
-    notIn?: Date[] | string[] | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -11300,8 +11850,8 @@ export namespace Prisma {
 
   export type NestedDateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | null
-    notIn?: Date[] | string[] | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
     lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
@@ -11314,231 +11864,19 @@ export namespace Prisma {
 
   export type NestedEnumRoleFilter<$PrismaModel = never> = {
     equals?: $Enums.Role | EnumRoleFieldRefInput<$PrismaModel>
-    in?: $Enums.Role[]
-    notIn?: $Enums.Role[]
+    in?: $Enums.Role[] | ListEnumRoleFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Role[] | ListEnumRoleFieldRefInput<$PrismaModel>
     not?: NestedEnumRoleFilter<$PrismaModel> | $Enums.Role
   }
 
   export type NestedEnumRoleWithAggregatesFilter<$PrismaModel = never> = {
     equals?: $Enums.Role | EnumRoleFieldRefInput<$PrismaModel>
-    in?: $Enums.Role[]
-    notIn?: $Enums.Role[]
+    in?: $Enums.Role[] | ListEnumRoleFieldRefInput<$PrismaModel>
+    notIn?: $Enums.Role[] | ListEnumRoleFieldRefInput<$PrismaModel>
     not?: NestedEnumRoleWithAggregatesFilter<$PrismaModel> | $Enums.Role
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedEnumRoleFilter<$PrismaModel>
     _max?: NestedEnumRoleFilter<$PrismaModel>
-  }
-
-  export type projectsCreateWithoutAssignedPeoplesInput = {
-    ProjectName: string
-    ProjectLogo?: string | null
-    ProjectStartDate?: Date | string | null
-    ProjectEndDate?: Date | string | null
-    ProjectDetail?: string | null
-    Description?: string | null
-    UserID: number
-    Created: Date | string
-    Modified: Date | string
-    IsActive?: boolean | null
-  }
-
-  export type projectsUncheckedCreateWithoutAssignedPeoplesInput = {
-    ProjectID?: number
-    ProjectName: string
-    ProjectLogo?: string | null
-    ProjectStartDate?: Date | string | null
-    ProjectEndDate?: Date | string | null
-    ProjectDetail?: string | null
-    Description?: string | null
-    UserID: number
-    Created: Date | string
-    Modified: Date | string
-    IsActive?: boolean | null
-  }
-
-  export type projectsCreateOrConnectWithoutAssignedPeoplesInput = {
-    where: projectsWhereUniqueInput
-    create: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput>
-  }
-
-  export type projectsUpsertWithWhereUniqueWithoutAssignedPeoplesInput = {
-    where: projectsWhereUniqueInput
-    update: XOR<projectsUpdateWithoutAssignedPeoplesInput, projectsUncheckedUpdateWithoutAssignedPeoplesInput>
-    create: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput>
-  }
-
-  export type projectsUpdateWithWhereUniqueWithoutAssignedPeoplesInput = {
-    where: projectsWhereUniqueInput
-    data: XOR<projectsUpdateWithoutAssignedPeoplesInput, projectsUncheckedUpdateWithoutAssignedPeoplesInput>
-  }
-
-  export type projectsUpdateManyWithWhereWithoutAssignedPeoplesInput = {
-    where: projectsScalarWhereInput
-    data: XOR<projectsUpdateManyMutationInput, projectsUncheckedUpdateManyWithoutAssignedPeoplesInput>
-  }
-
-  export type projectsScalarWhereInput = {
-    AND?: projectsScalarWhereInput | projectsScalarWhereInput[]
-    OR?: projectsScalarWhereInput[]
-    NOT?: projectsScalarWhereInput | projectsScalarWhereInput[]
-    ProjectID?: IntFilter<"projects"> | number
-    ProjectName?: StringFilter<"projects"> | string
-    ProjectLogo?: StringNullableFilter<"projects"> | string | null
-    ProjectStartDate?: DateTimeNullableFilter<"projects"> | Date | string | null
-    ProjectEndDate?: DateTimeNullableFilter<"projects"> | Date | string | null
-    ProjectDetail?: StringNullableFilter<"projects"> | string | null
-    Description?: StringNullableFilter<"projects"> | string | null
-    UserID?: IntFilter<"projects"> | number
-    Created?: DateTimeFilter<"projects"> | Date | string
-    Modified?: DateTimeFilter<"projects"> | Date | string
-    IsActive?: BoolNullableFilter<"projects"> | boolean | null
-  }
-
-  export type peoplesCreateWithoutProjectsInput = {
-    PeopleCode?: string | null
-    Password: string
-    PeopleName: string
-    Email: string
-    MobileNo: string
-    Description?: string | null
-    UserID: number
-    Created: Date | string
-    Modified: Date | string
-    IsActive?: boolean | null
-  }
-
-  export type peoplesUncheckedCreateWithoutProjectsInput = {
-    PeopleID?: number
-    PeopleCode?: string | null
-    Password: string
-    PeopleName: string
-    Email: string
-    MobileNo: string
-    Description?: string | null
-    UserID: number
-    Created: Date | string
-    Modified: Date | string
-    IsActive?: boolean | null
-  }
-
-  export type peoplesCreateOrConnectWithoutProjectsInput = {
-    where: peoplesWhereUniqueInput
-    create: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput>
-  }
-
-  export type peoplesUpsertWithWhereUniqueWithoutProjectsInput = {
-    where: peoplesWhereUniqueInput
-    update: XOR<peoplesUpdateWithoutProjectsInput, peoplesUncheckedUpdateWithoutProjectsInput>
-    create: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput>
-  }
-
-  export type peoplesUpdateWithWhereUniqueWithoutProjectsInput = {
-    where: peoplesWhereUniqueInput
-    data: XOR<peoplesUpdateWithoutProjectsInput, peoplesUncheckedUpdateWithoutProjectsInput>
-  }
-
-  export type peoplesUpdateManyWithWhereWithoutProjectsInput = {
-    where: peoplesScalarWhereInput
-    data: XOR<peoplesUpdateManyMutationInput, peoplesUncheckedUpdateManyWithoutProjectsInput>
-  }
-
-  export type peoplesScalarWhereInput = {
-    AND?: peoplesScalarWhereInput | peoplesScalarWhereInput[]
-    OR?: peoplesScalarWhereInput[]
-    NOT?: peoplesScalarWhereInput | peoplesScalarWhereInput[]
-    PeopleID?: IntFilter<"peoples"> | number
-    PeopleCode?: StringNullableFilter<"peoples"> | string | null
-    Password?: StringFilter<"peoples"> | string
-    PeopleName?: StringFilter<"peoples"> | string
-    Email?: StringFilter<"peoples"> | string
-    MobileNo?: StringFilter<"peoples"> | string
-    Description?: StringNullableFilter<"peoples"> | string | null
-    UserID?: IntFilter<"peoples"> | number
-    Created?: DateTimeFilter<"peoples"> | Date | string
-    Modified?: DateTimeFilter<"peoples"> | Date | string
-    IsActive?: BoolNullableFilter<"peoples"> | boolean | null
-  }
-
-  export type projectsUpdateWithoutAssignedPeoplesInput = {
-    ProjectName?: StringFieldUpdateOperationsInput | string
-    ProjectLogo?: NullableStringFieldUpdateOperationsInput | string | null
-    ProjectStartDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    ProjectEndDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    ProjectDetail?: NullableStringFieldUpdateOperationsInput | string | null
-    Description?: NullableStringFieldUpdateOperationsInput | string | null
-    UserID?: IntFieldUpdateOperationsInput | number
-    Created?: DateTimeFieldUpdateOperationsInput | Date | string
-    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
-    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
-  }
-
-  export type projectsUncheckedUpdateWithoutAssignedPeoplesInput = {
-    ProjectID?: IntFieldUpdateOperationsInput | number
-    ProjectName?: StringFieldUpdateOperationsInput | string
-    ProjectLogo?: NullableStringFieldUpdateOperationsInput | string | null
-    ProjectStartDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    ProjectEndDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    ProjectDetail?: NullableStringFieldUpdateOperationsInput | string | null
-    Description?: NullableStringFieldUpdateOperationsInput | string | null
-    UserID?: IntFieldUpdateOperationsInput | number
-    Created?: DateTimeFieldUpdateOperationsInput | Date | string
-    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
-    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
-  }
-
-  export type projectsUncheckedUpdateManyWithoutAssignedPeoplesInput = {
-    ProjectID?: IntFieldUpdateOperationsInput | number
-    ProjectName?: StringFieldUpdateOperationsInput | string
-    ProjectLogo?: NullableStringFieldUpdateOperationsInput | string | null
-    ProjectStartDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    ProjectEndDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
-    ProjectDetail?: NullableStringFieldUpdateOperationsInput | string | null
-    Description?: NullableStringFieldUpdateOperationsInput | string | null
-    UserID?: IntFieldUpdateOperationsInput | number
-    Created?: DateTimeFieldUpdateOperationsInput | Date | string
-    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
-    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
-  }
-
-  export type peoplesUpdateWithoutProjectsInput = {
-    PeopleCode?: NullableStringFieldUpdateOperationsInput | string | null
-    Password?: StringFieldUpdateOperationsInput | string
-    PeopleName?: StringFieldUpdateOperationsInput | string
-    Email?: StringFieldUpdateOperationsInput | string
-    MobileNo?: StringFieldUpdateOperationsInput | string
-    Description?: NullableStringFieldUpdateOperationsInput | string | null
-    UserID?: IntFieldUpdateOperationsInput | number
-    Created?: DateTimeFieldUpdateOperationsInput | Date | string
-    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
-    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
-  }
-
-  export type peoplesUncheckedUpdateWithoutProjectsInput = {
-    PeopleID?: IntFieldUpdateOperationsInput | number
-    PeopleCode?: NullableStringFieldUpdateOperationsInput | string | null
-    Password?: StringFieldUpdateOperationsInput | string
-    PeopleName?: StringFieldUpdateOperationsInput | string
-    Email?: StringFieldUpdateOperationsInput | string
-    MobileNo?: StringFieldUpdateOperationsInput | string
-    Description?: NullableStringFieldUpdateOperationsInput | string | null
-    UserID?: IntFieldUpdateOperationsInput | number
-    Created?: DateTimeFieldUpdateOperationsInput | Date | string
-    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
-    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
-  }
-
-  export type peoplesUncheckedUpdateManyWithoutProjectsInput = {
-    PeopleID?: IntFieldUpdateOperationsInput | number
-    PeopleCode?: NullableStringFieldUpdateOperationsInput | string | null
-    Password?: StringFieldUpdateOperationsInput | string
-    PeopleName?: StringFieldUpdateOperationsInput | string
-    Email?: StringFieldUpdateOperationsInput | string
-    MobileNo?: StringFieldUpdateOperationsInput | string
-    Description?: NullableStringFieldUpdateOperationsInput | string | null
-    UserID?: IntFieldUpdateOperationsInput | number
-    Created?: DateTimeFieldUpdateOperationsInput | Date | string
-    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
-    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
   }
 
 

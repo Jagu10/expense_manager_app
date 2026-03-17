@@ -4,7 +4,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -12,19 +12,19 @@ model categories {
   CategoryID   Int      @id @default(autoincrement())
   CategoryName String   @db.VarChar(250)
   LogoPath     String?  @db.VarChar(250)
-  IsExpense    Boolean  @db.Bit(1)
-  IsIncome     Boolean  @db.Bit(1)
-  IsActive     Boolean  @db.Bit(1)
+  IsExpense    Boolean
+  IsIncome     Boolean
+  IsActive     Boolean
   Description  String?  @db.VarChar(500)
   UserID       Int
-  Created      DateTime @db.DateTime(0)
-  Modified     DateTime @db.DateTime(0)
+  Created      DateTime
+  Modified     DateTime
   Sequence     Decimal? @db.Decimal(10, 2)
 }
 
 model expenses {
   ExpenseID      Int      @id @default(autoincrement())
-  ExpenseDate    DateTime @db.DateTime(0)
+  ExpenseDate    DateTime
   CategoryID     Int?
   SubCategoryID  Int?
   PeopleID       Int
@@ -34,13 +34,13 @@ model expenses {
   AttachmentPath String?  @db.VarChar(250)
   Description    String?  @db.VarChar(500)
   UserID         Int
-  Created        DateTime @db.DateTime(0)
-  Modified       DateTime @db.DateTime(0)
+  Created        DateTime
+  Modified       DateTime
 }
 
 model incomes {
   IncomeID       Int      @id @default(autoincrement())
-  IncomeDate     DateTime @db.DateTime(0)
+  IncomeDate     DateTime
   CategoryID     Int?
   SubCategoryID  Int?
   PeopleID       Int
@@ -50,38 +50,36 @@ model incomes {
   AttachmentPath String?  @db.VarChar(250)
   Description    String?  @db.VarChar(500)
   UserID         Int
-  Created        DateTime @db.DateTime(0)
-  Modified       DateTime @db.DateTime(0)
+  Created        DateTime
+  Modified       DateTime
 }
 
 model peoples {
-  PeopleID    Int        @id @default(autoincrement())
-  PeopleCode  String?    @db.VarChar(50)
-  Password    String     @db.VarChar(255)
-  PeopleName  String     @db.VarChar(250)
-  Email       String     @db.VarChar(150)
-  MobileNo    String     @db.VarChar(50)
-  Description String?    @db.VarChar(500)
+  PeopleID    Int      @id @default(autoincrement())
+  PeopleCode  String?  @db.VarChar(50)
+  Password    String   @db.VarChar(255)
+  PeopleName  String   @db.VarChar(250)
+  Email       String   @db.VarChar(150)
+  MobileNo    String   @db.VarChar(50)
+  Description String?  @db.VarChar(500)
   UserID      Int
-  Created     DateTime   @db.DateTime(0)
-  Modified    DateTime   @db.DateTime(0)
-  IsActive    Boolean?   @db.Bit(1)
-  projects    projects[] @relation("ProjectAssignments")
+  Created     DateTime
+  Modified    DateTime
+  IsActive    Boolean?
 }
 
 model projects {
   ProjectID        Int       @id @default(autoincrement())
   ProjectName      String    @db.VarChar(250)
   ProjectLogo      String?   @db.VarChar(250)
-  ProjectStartDate DateTime? @db.DateTime(0)
-  ProjectEndDate   DateTime? @db.DateTime(0)
+  ProjectStartDate DateTime?
+  ProjectEndDate   DateTime?
   ProjectDetail    String?   @db.VarChar(500)
   Description      String?   @db.VarChar(500)
   UserID           Int
-  Created          DateTime  @db.DateTime(0)
-  Modified         DateTime  @db.DateTime(0)
-  IsActive         Boolean?  @db.Bit(1)
-  assignedPeoples  peoples[] @relation("ProjectAssignments")
+  Created          DateTime
+  Modified         DateTime
+  IsActive         Boolean?
 }
 
 model sub_categories {
@@ -89,13 +87,13 @@ model sub_categories {
   CategoryID      Int
   SubCategoryName String   @db.VarChar(250)
   LogoPath        String?  @db.VarChar(250)
-  IsExpense       Boolean  @db.Bit(1)
-  IsIncome        Boolean  @db.Bit(1)
-  IsActive        Boolean  @db.Bit(1)
+  IsExpense       Boolean
+  IsIncome        Boolean
+  IsActive        Boolean
   Description     String?  @db.VarChar(500)
   UserID          Int
-  Created         DateTime @db.DateTime(0)
-  Modified        DateTime @db.DateTime(0)
+  Created         DateTime
+  Modified        DateTime
   Sequence        Decimal? @db.Decimal(10, 2)
 }
 
@@ -112,7 +110,7 @@ model users {
   MobileNo     String   @db.VarChar(50)
   Role         Role     @default(USER)
   ProfileImage String?  @db.VarChar(500)
-  IsActive     Boolean  @default(true) @db.Bit(1)
-  Created      DateTime @default(now()) @db.DateTime(0)
-  Modified     DateTime @updatedAt @db.DateTime(0)
+  IsActive     Boolean
+  Created      DateTime
+  Modified     DateTime
 }
