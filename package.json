@@ -1,12 +1,13 @@
 {
-  "name": "expenses",
+  "name": "expenses_manager_app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "primsa generate"
   },
   "dependencies": {
     "@prisma/adapter-mariadb": "^6.19.2",

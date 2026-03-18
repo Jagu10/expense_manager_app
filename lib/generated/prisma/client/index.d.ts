@@ -1419,6 +1419,67 @@ export namespace Prisma {
    */
 
 
+  /**
+   * Count Type PeoplesCountOutputType
+   */
+
+  export type PeoplesCountOutputType = {
+    projects: number
+  }
+
+  export type PeoplesCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    projects?: boolean | PeoplesCountOutputTypeCountProjectsArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * PeoplesCountOutputType without action
+   */
+  export type PeoplesCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the PeoplesCountOutputType
+     */
+    select?: PeoplesCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * PeoplesCountOutputType without action
+   */
+  export type PeoplesCountOutputTypeCountProjectsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: projectsWhereInput
+  }
+
+
+  /**
+   * Count Type ProjectsCountOutputType
+   */
+
+  export type ProjectsCountOutputType = {
+    assignedPeoples: number
+  }
+
+  export type ProjectsCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    assignedPeoples?: boolean | ProjectsCountOutputTypeCountAssignedPeoplesArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * ProjectsCountOutputType without action
+   */
+  export type ProjectsCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ProjectsCountOutputType
+     */
+    select?: ProjectsCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * ProjectsCountOutputType without action
+   */
+  export type ProjectsCountOutputTypeCountAssignedPeoplesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: peoplesWhereInput
+  }
+
 
   /**
    * Models
@@ -5103,6 +5164,8 @@ export namespace Prisma {
     Created?: boolean
     Modified?: boolean
     IsActive?: boolean
+    projects?: boolean | peoples$projectsArgs<ExtArgs>
+    _count?: boolean | PeoplesCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["peoples"]>
 
   export type peoplesSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -5148,10 +5211,18 @@ export namespace Prisma {
   }
 
   export type peoplesOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"PeopleID" | "PeopleCode" | "Password" | "PeopleName" | "Email" | "MobileNo" | "Description" | "UserID" | "Created" | "Modified" | "IsActive", ExtArgs["result"]["peoples"]>
+  export type peoplesInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    projects?: boolean | peoples$projectsArgs<ExtArgs>
+    _count?: boolean | PeoplesCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type peoplesIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+  export type peoplesIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $peoplesPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "peoples"
-    objects: {}
+    objects: {
+      projects: Prisma.$projectsPayload<ExtArgs>[]
+    }
     scalars: $Extensions.GetPayloadResult<{
       PeopleID: number
       PeopleCode: string | null
@@ -5558,6 +5629,7 @@ export namespace Prisma {
    */
   export interface Prisma__peoplesClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
+    projects<T extends peoples$projectsArgs<ExtArgs> = {}>(args?: Subset<T, peoples$projectsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$projectsPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -5615,6 +5687,10 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
+    /**
      * Filter, which peoples to fetch.
      */
     where: peoplesWhereUniqueInput
@@ -5633,6 +5709,10 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
+    /**
      * Filter, which peoples to fetch.
      */
     where: peoplesWhereUniqueInput
@@ -5650,6 +5730,10 @@ export namespace Prisma {
      * Omit specific fields from the peoples
      */
     omit?: peoplesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
     /**
      * Filter, which peoples to fetch.
      */
@@ -5699,6 +5783,10 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
+    /**
      * Filter, which peoples to fetch.
      */
     where?: peoplesWhereInput
@@ -5747,6 +5835,10 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
+    /**
      * Filter, which peoples to fetch.
      */
     where?: peoplesWhereInput
@@ -5789,6 +5881,10 @@ export namespace Prisma {
      * Omit specific fields from the peoples
      */
     omit?: peoplesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
     /**
      * The data needed to create a peoples.
      */
@@ -5837,6 +5933,10 @@ export namespace Prisma {
      * Omit specific fields from the peoples
      */
     omit?: peoplesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
     /**
      * The data needed to update a peoples.
      */
@@ -5904,6 +6004,10 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
+    /**
      * The filter to search for the peoples to update in case it exists.
      */
     where: peoplesWhereUniqueInput
@@ -5930,6 +6034,10 @@ export namespace Prisma {
      */
     omit?: peoplesOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
+    /**
      * Filter which peoples to delete.
      */
     where: peoplesWhereUniqueInput
@@ -5950,6 +6058,30 @@ export namespace Prisma {
   }
 
   /**
+   * peoples.projects
+   */
+  export type peoples$projectsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the projects
+     */
+    select?: projectsSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the projects
+     */
+    omit?: projectsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
+    where?: projectsWhereInput
+    orderBy?: projectsOrderByWithRelationInput | projectsOrderByWithRelationInput[]
+    cursor?: projectsWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: ProjectsScalarFieldEnum | ProjectsScalarFieldEnum[]
+  }
+
+  /**
    * peoples without action
    */
   export type peoplesDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -5961,6 +6093,10 @@ export namespace Prisma {
      * Omit specific fields from the peoples
      */
     omit?: peoplesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
   }
 
 
@@ -6214,6 +6350,8 @@ export namespace Prisma {
     Created?: boolean
     Modified?: boolean
     IsActive?: boolean
+    assignedPeoples?: boolean | projects$assignedPeoplesArgs<ExtArgs>
+    _count?: boolean | ProjectsCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["projects"]>
 
   export type projectsSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -6259,10 +6397,18 @@ export namespace Prisma {
   }
 
   export type projectsOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"ProjectID" | "ProjectName" | "ProjectLogo" | "ProjectStartDate" | "ProjectEndDate" | "ProjectDetail" | "Description" | "UserID" | "Created" | "Modified" | "IsActive", ExtArgs["result"]["projects"]>
+  export type projectsInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    assignedPeoples?: boolean | projects$assignedPeoplesArgs<ExtArgs>
+    _count?: boolean | ProjectsCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type projectsIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+  export type projectsIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
 
   export type $projectsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "projects"
-    objects: {}
+    objects: {
+      assignedPeoples: Prisma.$peoplesPayload<ExtArgs>[]
+    }
     scalars: $Extensions.GetPayloadResult<{
       ProjectID: number
       ProjectName: string
@@ -6669,6 +6815,7 @@ export namespace Prisma {
    */
   export interface Prisma__projectsClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
     readonly [Symbol.toStringTag]: "PrismaPromise"
+    assignedPeoples<T extends projects$assignedPeoplesArgs<ExtArgs> = {}>(args?: Subset<T, projects$assignedPeoplesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$peoplesPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -6726,6 +6873,10 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
+    /**
      * Filter, which projects to fetch.
      */
     where: projectsWhereUniqueInput
@@ -6744,6 +6895,10 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
+    /**
      * Filter, which projects to fetch.
      */
     where: projectsWhereUniqueInput
@@ -6761,6 +6916,10 @@ export namespace Prisma {
      * Omit specific fields from the projects
      */
     omit?: projectsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
     /**
      * Filter, which projects to fetch.
      */
@@ -6810,6 +6969,10 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
+    /**
      * Filter, which projects to fetch.
      */
     where?: projectsWhereInput
@@ -6858,6 +7021,10 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
+    /**
      * Filter, which projects to fetch.
      */
     where?: projectsWhereInput
@@ -6900,6 +7067,10 @@ export namespace Prisma {
      * Omit specific fields from the projects
      */
     omit?: projectsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
     /**
      * The data needed to create a projects.
      */
@@ -6948,6 +7119,10 @@ export namespace Prisma {
      * Omit specific fields from the projects
      */
     omit?: projectsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
     /**
      * The data needed to update a projects.
      */
@@ -7015,6 +7190,10 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
+    /**
      * The filter to search for the projects to update in case it exists.
      */
     where: projectsWhereUniqueInput
@@ -7041,6 +7220,10 @@ export namespace Prisma {
      */
     omit?: projectsOmit<ExtArgs> | null
     /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
+    /**
      * Filter which projects to delete.
      */
     where: projectsWhereUniqueInput
@@ -7061,6 +7244,30 @@ export namespace Prisma {
   }
 
   /**
+   * projects.assignedPeoples
+   */
+  export type projects$assignedPeoplesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the peoples
+     */
+    select?: peoplesSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the peoples
+     */
+    omit?: peoplesOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: peoplesInclude<ExtArgs> | null
+    where?: peoplesWhereInput
+    orderBy?: peoplesOrderByWithRelationInput | peoplesOrderByWithRelationInput[]
+    cursor?: peoplesWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: PeoplesScalarFieldEnum | PeoplesScalarFieldEnum[]
+  }
+
+  /**
    * projects without action
    */
   export type projectsDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -7072,6 +7279,10 @@ export namespace Prisma {
      * Omit specific fields from the projects
      */
     omit?: projectsOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: projectsInclude<ExtArgs> | null
   }
 
 
@@ -9848,6 +10059,7 @@ export namespace Prisma {
     Created?: DateTimeFilter<"peoples"> | Date | string
     Modified?: DateTimeFilter<"peoples"> | Date | string
     IsActive?: BoolNullableFilter<"peoples"> | boolean | null
+    projects?: ProjectsListRelationFilter
   }
 
   export type peoplesOrderByWithRelationInput = {
@@ -9862,6 +10074,7 @@ export namespace Prisma {
     Created?: SortOrder
     Modified?: SortOrder
     IsActive?: SortOrderInput | SortOrder
+    projects?: projectsOrderByRelationAggregateInput
   }
 
   export type peoplesWhereUniqueInput = Prisma.AtLeast<{
@@ -9879,6 +10092,7 @@ export namespace Prisma {
     Created?: DateTimeFilter<"peoples"> | Date | string
     Modified?: DateTimeFilter<"peoples"> | Date | string
     IsActive?: BoolNullableFilter<"peoples"> | boolean | null
+    projects?: ProjectsListRelationFilter
   }, "PeopleID">
 
   export type peoplesOrderByWithAggregationInput = {
@@ -9932,6 +10146,7 @@ export namespace Prisma {
     Created?: DateTimeFilter<"projects"> | Date | string
     Modified?: DateTimeFilter<"projects"> | Date | string
     IsActive?: BoolNullableFilter<"projects"> | boolean | null
+    assignedPeoples?: PeoplesListRelationFilter
   }
 
   export type projectsOrderByWithRelationInput = {
@@ -9946,6 +10161,7 @@ export namespace Prisma {
     Created?: SortOrder
     Modified?: SortOrder
     IsActive?: SortOrderInput | SortOrder
+    assignedPeoples?: peoplesOrderByRelationAggregateInput
   }
 
   export type projectsWhereUniqueInput = Prisma.AtLeast<{
@@ -9963,6 +10179,7 @@ export namespace Prisma {
     Created?: DateTimeFilter<"projects"> | Date | string
     Modified?: DateTimeFilter<"projects"> | Date | string
     IsActive?: BoolNullableFilter<"projects"> | boolean | null
+    assignedPeoples?: PeoplesListRelationFilter
   }, "ProjectID">
 
   export type projectsOrderByWithAggregationInput = {
@@ -10493,6 +10710,7 @@ export namespace Prisma {
     Created: Date | string
     Modified: Date | string
     IsActive?: boolean | null
+    projects?: projectsCreateNestedManyWithoutAssignedPeoplesInput
   }
 
   export type peoplesUncheckedCreateInput = {
@@ -10507,6 +10725,7 @@ export namespace Prisma {
     Created: Date | string
     Modified: Date | string
     IsActive?: boolean | null
+    projects?: projectsUncheckedCreateNestedManyWithoutAssignedPeoplesInput
   }
 
   export type peoplesUpdateInput = {
@@ -10520,6 +10739,7 @@ export namespace Prisma {
     Created?: DateTimeFieldUpdateOperationsInput | Date | string
     Modified?: DateTimeFieldUpdateOperationsInput | Date | string
     IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
+    projects?: projectsUpdateManyWithoutAssignedPeoplesNestedInput
   }
 
   export type peoplesUncheckedUpdateInput = {
@@ -10534,6 +10754,7 @@ export namespace Prisma {
     Created?: DateTimeFieldUpdateOperationsInput | Date | string
     Modified?: DateTimeFieldUpdateOperationsInput | Date | string
     IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
+    projects?: projectsUncheckedUpdateManyWithoutAssignedPeoplesNestedInput
   }
 
   export type peoplesCreateManyInput = {
@@ -10588,6 +10809,7 @@ export namespace Prisma {
     Created: Date | string
     Modified: Date | string
     IsActive?: boolean | null
+    assignedPeoples?: peoplesCreateNestedManyWithoutProjectsInput
   }
 
   export type projectsUncheckedCreateInput = {
@@ -10602,6 +10824,7 @@ export namespace Prisma {
     Created: Date | string
     Modified: Date | string
     IsActive?: boolean | null
+    assignedPeoples?: peoplesUncheckedCreateNestedManyWithoutProjectsInput
   }
 
   export type projectsUpdateInput = {
@@ -10615,6 +10838,7 @@ export namespace Prisma {
     Created?: DateTimeFieldUpdateOperationsInput | Date | string
     Modified?: DateTimeFieldUpdateOperationsInput | Date | string
     IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
+    assignedPeoples?: peoplesUpdateManyWithoutProjectsNestedInput
   }
 
   export type projectsUncheckedUpdateInput = {
@@ -10629,6 +10853,7 @@ export namespace Prisma {
     Created?: DateTimeFieldUpdateOperationsInput | Date | string
     Modified?: DateTimeFieldUpdateOperationsInput | Date | string
     IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
+    assignedPeoples?: peoplesUncheckedUpdateManyWithoutProjectsNestedInput
   }
 
   export type projectsCreateManyInput = {
@@ -11274,6 +11499,16 @@ export namespace Prisma {
     not?: NestedBoolNullableFilter<$PrismaModel> | boolean | null
   }
 
+  export type ProjectsListRelationFilter = {
+    every?: projectsWhereInput
+    some?: projectsWhereInput
+    none?: projectsWhereInput
+  }
+
+  export type projectsOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
   export type peoplesCountOrderByAggregateInput = {
     PeopleID?: SortOrder
     PeopleCode?: SortOrder
@@ -11343,6 +11578,16 @@ export namespace Prisma {
     gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     not?: NestedDateTimeNullableFilter<$PrismaModel> | Date | string | null
+  }
+
+  export type PeoplesListRelationFilter = {
+    every?: peoplesWhereInput
+    some?: peoplesWhereInput
+    none?: peoplesWhereInput
+  }
+
+  export type peoplesOrderByRelationAggregateInput = {
+    _count?: SortOrder
   }
 
   export type projectsCountOrderByAggregateInput = {
@@ -11582,12 +11827,88 @@ export namespace Prisma {
     divide?: Decimal | DecimalJsLike | number | string
   }
 
+  export type projectsCreateNestedManyWithoutAssignedPeoplesInput = {
+    create?: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput> | projectsCreateWithoutAssignedPeoplesInput[] | projectsUncheckedCreateWithoutAssignedPeoplesInput[]
+    connectOrCreate?: projectsCreateOrConnectWithoutAssignedPeoplesInput | projectsCreateOrConnectWithoutAssignedPeoplesInput[]
+    connect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
+  }
+
+  export type projectsUncheckedCreateNestedManyWithoutAssignedPeoplesInput = {
+    create?: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput> | projectsCreateWithoutAssignedPeoplesInput[] | projectsUncheckedCreateWithoutAssignedPeoplesInput[]
+    connectOrCreate?: projectsCreateOrConnectWithoutAssignedPeoplesInput | projectsCreateOrConnectWithoutAssignedPeoplesInput[]
+    connect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
+  }
+
   export type NullableBoolFieldUpdateOperationsInput = {
     set?: boolean | null
   }
 
+  export type projectsUpdateManyWithoutAssignedPeoplesNestedInput = {
+    create?: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput> | projectsCreateWithoutAssignedPeoplesInput[] | projectsUncheckedCreateWithoutAssignedPeoplesInput[]
+    connectOrCreate?: projectsCreateOrConnectWithoutAssignedPeoplesInput | projectsCreateOrConnectWithoutAssignedPeoplesInput[]
+    upsert?: projectsUpsertWithWhereUniqueWithoutAssignedPeoplesInput | projectsUpsertWithWhereUniqueWithoutAssignedPeoplesInput[]
+    set?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
+    disconnect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
+    delete?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
+    connect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
+    update?: projectsUpdateWithWhereUniqueWithoutAssignedPeoplesInput | projectsUpdateWithWhereUniqueWithoutAssignedPeoplesInput[]
+    updateMany?: projectsUpdateManyWithWhereWithoutAssignedPeoplesInput | projectsUpdateManyWithWhereWithoutAssignedPeoplesInput[]
+    deleteMany?: projectsScalarWhereInput | projectsScalarWhereInput[]
+  }
+
+  export type projectsUncheckedUpdateManyWithoutAssignedPeoplesNestedInput = {
+    create?: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput> | projectsCreateWithoutAssignedPeoplesInput[] | projectsUncheckedCreateWithoutAssignedPeoplesInput[]
+    connectOrCreate?: projectsCreateOrConnectWithoutAssignedPeoplesInput | projectsCreateOrConnectWithoutAssignedPeoplesInput[]
+    upsert?: projectsUpsertWithWhereUniqueWithoutAssignedPeoplesInput | projectsUpsertWithWhereUniqueWithoutAssignedPeoplesInput[]
+    set?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
+    disconnect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
+    delete?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
+    connect?: projectsWhereUniqueInput | projectsWhereUniqueInput[]
+    update?: projectsUpdateWithWhereUniqueWithoutAssignedPeoplesInput | projectsUpdateWithWhereUniqueWithoutAssignedPeoplesInput[]
+    updateMany?: projectsUpdateManyWithWhereWithoutAssignedPeoplesInput | projectsUpdateManyWithWhereWithoutAssignedPeoplesInput[]
+    deleteMany?: projectsScalarWhereInput | projectsScalarWhereInput[]
+  }
+
+  export type peoplesCreateNestedManyWithoutProjectsInput = {
+    create?: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput> | peoplesCreateWithoutProjectsInput[] | peoplesUncheckedCreateWithoutProjectsInput[]
+    connectOrCreate?: peoplesCreateOrConnectWithoutProjectsInput | peoplesCreateOrConnectWithoutProjectsInput[]
+    connect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
+  }
+
+  export type peoplesUncheckedCreateNestedManyWithoutProjectsInput = {
+    create?: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput> | peoplesCreateWithoutProjectsInput[] | peoplesUncheckedCreateWithoutProjectsInput[]
+    connectOrCreate?: peoplesCreateOrConnectWithoutProjectsInput | peoplesCreateOrConnectWithoutProjectsInput[]
+    connect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
+  }
+
   export type NullableDateTimeFieldUpdateOperationsInput = {
     set?: Date | string | null
+  }
+
+  export type peoplesUpdateManyWithoutProjectsNestedInput = {
+    create?: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput> | peoplesCreateWithoutProjectsInput[] | peoplesUncheckedCreateWithoutProjectsInput[]
+    connectOrCreate?: peoplesCreateOrConnectWithoutProjectsInput | peoplesCreateOrConnectWithoutProjectsInput[]
+    upsert?: peoplesUpsertWithWhereUniqueWithoutProjectsInput | peoplesUpsertWithWhereUniqueWithoutProjectsInput[]
+    set?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
+    disconnect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
+    delete?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
+    connect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
+    update?: peoplesUpdateWithWhereUniqueWithoutProjectsInput | peoplesUpdateWithWhereUniqueWithoutProjectsInput[]
+    updateMany?: peoplesUpdateManyWithWhereWithoutProjectsInput | peoplesUpdateManyWithWhereWithoutProjectsInput[]
+    deleteMany?: peoplesScalarWhereInput | peoplesScalarWhereInput[]
+  }
+
+  export type peoplesUncheckedUpdateManyWithoutProjectsNestedInput = {
+    create?: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput> | peoplesCreateWithoutProjectsInput[] | peoplesUncheckedCreateWithoutProjectsInput[]
+    connectOrCreate?: peoplesCreateOrConnectWithoutProjectsInput | peoplesCreateOrConnectWithoutProjectsInput[]
+    upsert?: peoplesUpsertWithWhereUniqueWithoutProjectsInput | peoplesUpsertWithWhereUniqueWithoutProjectsInput[]
+    set?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
+    disconnect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
+    delete?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
+    connect?: peoplesWhereUniqueInput | peoplesWhereUniqueInput[]
+    update?: peoplesUpdateWithWhereUniqueWithoutProjectsInput | peoplesUpdateWithWhereUniqueWithoutProjectsInput[]
+    updateMany?: peoplesUpdateManyWithWhereWithoutProjectsInput | peoplesUpdateManyWithWhereWithoutProjectsInput[]
+    deleteMany?: peoplesScalarWhereInput | peoplesScalarWhereInput[]
   }
 
   export type EnumRoleFieldUpdateOperationsInput = {
@@ -11877,6 +12198,218 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedEnumRoleFilter<$PrismaModel>
     _max?: NestedEnumRoleFilter<$PrismaModel>
+  }
+
+  export type projectsCreateWithoutAssignedPeoplesInput = {
+    ProjectName: string
+    ProjectLogo?: string | null
+    ProjectStartDate?: Date | string | null
+    ProjectEndDate?: Date | string | null
+    ProjectDetail?: string | null
+    Description?: string | null
+    UserID: number
+    Created: Date | string
+    Modified: Date | string
+    IsActive?: boolean | null
+  }
+
+  export type projectsUncheckedCreateWithoutAssignedPeoplesInput = {
+    ProjectID?: number
+    ProjectName: string
+    ProjectLogo?: string | null
+    ProjectStartDate?: Date | string | null
+    ProjectEndDate?: Date | string | null
+    ProjectDetail?: string | null
+    Description?: string | null
+    UserID: number
+    Created: Date | string
+    Modified: Date | string
+    IsActive?: boolean | null
+  }
+
+  export type projectsCreateOrConnectWithoutAssignedPeoplesInput = {
+    where: projectsWhereUniqueInput
+    create: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput>
+  }
+
+  export type projectsUpsertWithWhereUniqueWithoutAssignedPeoplesInput = {
+    where: projectsWhereUniqueInput
+    update: XOR<projectsUpdateWithoutAssignedPeoplesInput, projectsUncheckedUpdateWithoutAssignedPeoplesInput>
+    create: XOR<projectsCreateWithoutAssignedPeoplesInput, projectsUncheckedCreateWithoutAssignedPeoplesInput>
+  }
+
+  export type projectsUpdateWithWhereUniqueWithoutAssignedPeoplesInput = {
+    where: projectsWhereUniqueInput
+    data: XOR<projectsUpdateWithoutAssignedPeoplesInput, projectsUncheckedUpdateWithoutAssignedPeoplesInput>
+  }
+
+  export type projectsUpdateManyWithWhereWithoutAssignedPeoplesInput = {
+    where: projectsScalarWhereInput
+    data: XOR<projectsUpdateManyMutationInput, projectsUncheckedUpdateManyWithoutAssignedPeoplesInput>
+  }
+
+  export type projectsScalarWhereInput = {
+    AND?: projectsScalarWhereInput | projectsScalarWhereInput[]
+    OR?: projectsScalarWhereInput[]
+    NOT?: projectsScalarWhereInput | projectsScalarWhereInput[]
+    ProjectID?: IntFilter<"projects"> | number
+    ProjectName?: StringFilter<"projects"> | string
+    ProjectLogo?: StringNullableFilter<"projects"> | string | null
+    ProjectStartDate?: DateTimeNullableFilter<"projects"> | Date | string | null
+    ProjectEndDate?: DateTimeNullableFilter<"projects"> | Date | string | null
+    ProjectDetail?: StringNullableFilter<"projects"> | string | null
+    Description?: StringNullableFilter<"projects"> | string | null
+    UserID?: IntFilter<"projects"> | number
+    Created?: DateTimeFilter<"projects"> | Date | string
+    Modified?: DateTimeFilter<"projects"> | Date | string
+    IsActive?: BoolNullableFilter<"projects"> | boolean | null
+  }
+
+  export type peoplesCreateWithoutProjectsInput = {
+    PeopleCode?: string | null
+    Password: string
+    PeopleName: string
+    Email: string
+    MobileNo: string
+    Description?: string | null
+    UserID: number
+    Created: Date | string
+    Modified: Date | string
+    IsActive?: boolean | null
+  }
+
+  export type peoplesUncheckedCreateWithoutProjectsInput = {
+    PeopleID?: number
+    PeopleCode?: string | null
+    Password: string
+    PeopleName: string
+    Email: string
+    MobileNo: string
+    Description?: string | null
+    UserID: number
+    Created: Date | string
+    Modified: Date | string
+    IsActive?: boolean | null
+  }
+
+  export type peoplesCreateOrConnectWithoutProjectsInput = {
+    where: peoplesWhereUniqueInput
+    create: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput>
+  }
+
+  export type peoplesUpsertWithWhereUniqueWithoutProjectsInput = {
+    where: peoplesWhereUniqueInput
+    update: XOR<peoplesUpdateWithoutProjectsInput, peoplesUncheckedUpdateWithoutProjectsInput>
+    create: XOR<peoplesCreateWithoutProjectsInput, peoplesUncheckedCreateWithoutProjectsInput>
+  }
+
+  export type peoplesUpdateWithWhereUniqueWithoutProjectsInput = {
+    where: peoplesWhereUniqueInput
+    data: XOR<peoplesUpdateWithoutProjectsInput, peoplesUncheckedUpdateWithoutProjectsInput>
+  }
+
+  export type peoplesUpdateManyWithWhereWithoutProjectsInput = {
+    where: peoplesScalarWhereInput
+    data: XOR<peoplesUpdateManyMutationInput, peoplesUncheckedUpdateManyWithoutProjectsInput>
+  }
+
+  export type peoplesScalarWhereInput = {
+    AND?: peoplesScalarWhereInput | peoplesScalarWhereInput[]
+    OR?: peoplesScalarWhereInput[]
+    NOT?: peoplesScalarWhereInput | peoplesScalarWhereInput[]
+    PeopleID?: IntFilter<"peoples"> | number
+    PeopleCode?: StringNullableFilter<"peoples"> | string | null
+    Password?: StringFilter<"peoples"> | string
+    PeopleName?: StringFilter<"peoples"> | string
+    Email?: StringFilter<"peoples"> | string
+    MobileNo?: StringFilter<"peoples"> | string
+    Description?: StringNullableFilter<"peoples"> | string | null
+    UserID?: IntFilter<"peoples"> | number
+    Created?: DateTimeFilter<"peoples"> | Date | string
+    Modified?: DateTimeFilter<"peoples"> | Date | string
+    IsActive?: BoolNullableFilter<"peoples"> | boolean | null
+  }
+
+  export type projectsUpdateWithoutAssignedPeoplesInput = {
+    ProjectName?: StringFieldUpdateOperationsInput | string
+    ProjectLogo?: NullableStringFieldUpdateOperationsInput | string | null
+    ProjectStartDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    ProjectEndDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    ProjectDetail?: NullableStringFieldUpdateOperationsInput | string | null
+    Description?: NullableStringFieldUpdateOperationsInput | string | null
+    UserID?: IntFieldUpdateOperationsInput | number
+    Created?: DateTimeFieldUpdateOperationsInput | Date | string
+    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
+    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
+  }
+
+  export type projectsUncheckedUpdateWithoutAssignedPeoplesInput = {
+    ProjectID?: IntFieldUpdateOperationsInput | number
+    ProjectName?: StringFieldUpdateOperationsInput | string
+    ProjectLogo?: NullableStringFieldUpdateOperationsInput | string | null
+    ProjectStartDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    ProjectEndDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    ProjectDetail?: NullableStringFieldUpdateOperationsInput | string | null
+    Description?: NullableStringFieldUpdateOperationsInput | string | null
+    UserID?: IntFieldUpdateOperationsInput | number
+    Created?: DateTimeFieldUpdateOperationsInput | Date | string
+    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
+    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
+  }
+
+  export type projectsUncheckedUpdateManyWithoutAssignedPeoplesInput = {
+    ProjectID?: IntFieldUpdateOperationsInput | number
+    ProjectName?: StringFieldUpdateOperationsInput | string
+    ProjectLogo?: NullableStringFieldUpdateOperationsInput | string | null
+    ProjectStartDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    ProjectEndDate?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    ProjectDetail?: NullableStringFieldUpdateOperationsInput | string | null
+    Description?: NullableStringFieldUpdateOperationsInput | string | null
+    UserID?: IntFieldUpdateOperationsInput | number
+    Created?: DateTimeFieldUpdateOperationsInput | Date | string
+    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
+    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
+  }
+
+  export type peoplesUpdateWithoutProjectsInput = {
+    PeopleCode?: NullableStringFieldUpdateOperationsInput | string | null
+    Password?: StringFieldUpdateOperationsInput | string
+    PeopleName?: StringFieldUpdateOperationsInput | string
+    Email?: StringFieldUpdateOperationsInput | string
+    MobileNo?: StringFieldUpdateOperationsInput | string
+    Description?: NullableStringFieldUpdateOperationsInput | string | null
+    UserID?: IntFieldUpdateOperationsInput | number
+    Created?: DateTimeFieldUpdateOperationsInput | Date | string
+    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
+    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
+  }
+
+  export type peoplesUncheckedUpdateWithoutProjectsInput = {
+    PeopleID?: IntFieldUpdateOperationsInput | number
+    PeopleCode?: NullableStringFieldUpdateOperationsInput | string | null
+    Password?: StringFieldUpdateOperationsInput | string
+    PeopleName?: StringFieldUpdateOperationsInput | string
+    Email?: StringFieldUpdateOperationsInput | string
+    MobileNo?: StringFieldUpdateOperationsInput | string
+    Description?: NullableStringFieldUpdateOperationsInput | string | null
+    UserID?: IntFieldUpdateOperationsInput | number
+    Created?: DateTimeFieldUpdateOperationsInput | Date | string
+    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
+    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
+  }
+
+  export type peoplesUncheckedUpdateManyWithoutProjectsInput = {
+    PeopleID?: IntFieldUpdateOperationsInput | number
+    PeopleCode?: NullableStringFieldUpdateOperationsInput | string | null
+    Password?: StringFieldUpdateOperationsInput | string
+    PeopleName?: StringFieldUpdateOperationsInput | string
+    Email?: StringFieldUpdateOperationsInput | string
+    MobileNo?: StringFieldUpdateOperationsInput | string
+    Description?: NullableStringFieldUpdateOperationsInput | string | null
+    UserID?: IntFieldUpdateOperationsInput | number
+    Created?: DateTimeFieldUpdateOperationsInput | Date | string
+    Modified?: DateTimeFieldUpdateOperationsInput | Date | string
+    IsActive?: NullableBoolFieldUpdateOperationsInput | boolean | null
   }
 
 

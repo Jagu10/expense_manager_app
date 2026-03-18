@@ -66,7 +66,7 @@ model peoples {
   Created     DateTime 
   Modified    DateTime
   IsActive    Boolean? 
-
+  projects    projects[] @relation("ProjectAssignments")
 }
 
 model projects {
@@ -81,7 +81,7 @@ model projects {
   Created          DateTime  
   Modified         DateTime  
   IsActive         Boolean?  
-  
+  assignedPeoples  peoples[] @relation("ProjectAssignments")
 }
 
 model sub_categories {

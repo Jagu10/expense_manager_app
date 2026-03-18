@@ -55,17 +55,18 @@ model incomes {
 }
 
 model peoples {
-  PeopleID    Int      @id @default(autoincrement())
-  PeopleCode  String?  @db.VarChar(50)
-  Password    String   @db.VarChar(255)
-  PeopleName  String   @db.VarChar(250)
-  Email       String   @db.VarChar(150)
-  MobileNo    String   @db.VarChar(50)
-  Description String?  @db.VarChar(500)
+  PeopleID    Int        @id @default(autoincrement())
+  PeopleCode  String?    @db.VarChar(50)
+  Password    String     @db.VarChar(255)
+  PeopleName  String     @db.VarChar(250)
+  Email       String     @db.VarChar(150)
+  MobileNo    String     @db.VarChar(50)
+  Description String?    @db.VarChar(500)
   UserID      Int
   Created     DateTime
   Modified    DateTime
   IsActive    Boolean?
+  projects    projects[] @relation("ProjectAssignments")
 }
 
 model projects {
@@ -80,6 +81,7 @@ model projects {
   Created          DateTime
   Modified         DateTime
   IsActive         Boolean?
+  assignedPeoples  peoples[] @relation("ProjectAssignments")
 }
 
 model sub_categories {

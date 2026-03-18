@@ -33,6 +33,7 @@ export async function registerUser(formData: FormData): Promise<void> {
       MobileNo: mobile,
       Password: hashedPassword,
       Role: role,
+      IsActive:true,
       Created: new Date(),
       Modified: new Date(),
     },
